@@ -1,68 +1,89 @@
 [
   {
-    "id": "openai",
-    "name": "OpenAI",
-    "queries": [
-      "OpenAI latest announcements",
-      "site:openai.com/news OpenAI"
+    "id": "ai",
+    "name": "AI",
+    "description": "AI 模型、agents、開發工具與平台更新。",
+    "topics": [
+      {
+        "id": "openai",
+        "name": "OpenAI",
+        "queries": [
+          "OpenAI latest announcements",
+          "site:openai.com/news OpenAI"
+        ]
+      },
+      {
+        "id": "ai-agents",
+        "name": "AI agents",
+        "queries": [
+          "AI agents latest news",
+          "autonomous AI agents research product announcements"
+        ]
+      },
+      {
+        "id": "openclaw",
+        "name": "OpenClaw",
+        "queries": [
+          "OpenClaw AI agent latest",
+          "OpenClaw openclaw.ai docs release"
+        ]
+      },
+      {
+        "id": "anthropic",
+        "name": "Anthropic",
+        "queries": [
+          "Anthropic latest announcements",
+          "site:anthropic.com/news Anthropic"
+        ]
+      },
+      {
+        "id": "github-copilot",
+        "name": "GitHub Copilot",
+        "queries": [
+          "GitHub Copilot latest announcements",
+          "site:github.blog/changelog Copilot"
+        ]
+      },
+      {
+        "id": "gemini",
+        "name": "Gemini",
+        "queries": [
+          "Google Gemini latest announcements",
+          "site:blog.google/products/gemini Gemini"
+        ]
+      }
     ]
   },
   {
-    "id": "ai-agents",
-    "name": "AI agents",
-    "queries": [
-      "AI agents latest news",
-      "autonomous AI agents research product announcements"
+    "id": "finance-trading",
+    "name": "金融交易",
+    "description": "量化交易、金融市場模型、風控與交易系統研究。",
+    "topics": [
+      {
+        "id": "deep-learning-trading",
+        "name": "金融交易深度學習模型",
+        "queries": [
+          "deep learning trading model latest research finance",
+          "machine learning algorithmic trading deep learning latest",
+          "金融交易 深度學習 模型 研究 最新"
+        ]
+      }
     ]
   },
   {
-    "id": "openclaw",
-    "name": "OpenClaw",
-    "queries": [
-      "OpenClaw AI agent latest",
-      "OpenClaw openclaw.ai docs release"
-    ]
-  },
-  {
-    "id": "anthropic",
-    "name": "Anthropic",
-    "queries": [
-      "Anthropic latest announcements",
-      "site:anthropic.com/news Anthropic"
-    ]
-  },
-  {
-    "id": "github-copilot",
-    "name": "GitHub Copilot",
-    "queries": [
-      "GitHub Copilot latest announcements",
-      "site:github.blog/changelog Copilot"
-    ]
-  },
-  {
-    "id": "gemini",
-    "name": "Gemini",
-    "queries": [
-      "Google Gemini latest announcements",
-      "site:blog.google/products/gemini Gemini"
-    ]
-  },
-  {
-    "id": "deep-learning-trading",
-    "name": "金融交易深度學習模型",
-    "queries": [
-      "deep learning trading model latest research finance",
-      "machine learning algorithmic trading deep learning latest",
-      "金融交易 深度學習 模型 研究 最新"
-    ]
-  },
-  {
-    "id": "linux",
-    "name": "Linux 相關資訊",
-    "queries": [
-      "Linux latest news kernel release security updates",
-      "Linux kernel release notes latest",
-      "Linux security updates CVE latest"
+    "id": "systems-linux",
+    "name": "系統與 Linux",
+    "description": "Linux kernel、發行版、安全更新、系統工具與基礎設施。",
+    "topics": [
+      {
+        "id": "linux",
+        "name": "Linux 相關資訊",
+        "queries": [
+          "Linux latest news kernel release security updates",
+          "Linux kernel release notes latest",
+          "Linux security updates CVE latest"
+        ]
+      }
     ]
   }
 ]
