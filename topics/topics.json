@@ -1,0 +1,32 @@
+[
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "queries": ["OpenAI latest announcements", "site:openai.com/news OpenAI"]
+  },
+  {
+    "id": "ai-agents",
+    "name": "AI agents",
+    "queries": ["AI agents latest news", "autonomous AI agents research product announcements"]
+  },
+  {
+    "id": "openclaw",
+    "name": "OpenClaw",
+    "queries": ["OpenClaw AI agent latest", "OpenClaw openclaw.ai docs release"]
+  },
+  {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "queries": ["Anthropic latest announcements", "site:anthropic.com/news Anthropic"]
+  },
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "queries": ["GitHub Copilot latest announcements", "site:github.blog/changelog Copilot"]
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "queries": ["Google Gemini latest announcements", "site:blog.google/products/gemini Gemini"]
+  }
+]
