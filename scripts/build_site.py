@@ -3,11 +3,13 @@ import json
 import html
 import pathlib
 import datetime
+import email.utils
 
 root = pathlib.Path(__file__).resolve().parents[1]
 docs = root / 'docs'
 (docs / 'topics').mkdir(parents=True, exist_ok=True)
 (docs / 'categories').mkdir(parents=True, exist_ok=True)
+(docs / 'feeds').mkdir(parents=True, exist_ok=True)
 
 topic_tree = json.loads((root / 'topics/topics.json').read_text())
 data = json.loads((root / 'data/items.json').read_text())
@@ -55,6 +57,21 @@ recent_items = items[:8]
 def esc(value):
     return html.escape(str(value or ''))
 
+def xml_esc(value):
+    return html.escape(str(value or ''), quote=True)
+
+def site_url(path=''):
+    base = 'https://evan891119ai.github.io/longxia-info-board/'
+    return base + path.lstrip('/')
+
+def rss_date(value=None):
+    # Many current items have relative dates like "5 days ago"; use board updated time for stable RSS dates.
+    try:
+        dt = datetime.datetime.fromisoformat(str(updated).replace('Z', '+00:00'))
+    except Exception:
+        dt = datetime.datetime.now(datetime.timezone.utc)
+    return email.utils.format_datetime(dt)
+
 css = r'''
 :root{color-scheme:light dark;--bg:#0b0d12;--bg2:#11141b;--card:#171b24;--card2:#1d2230;--text:#edf1f7;--muted:#98a3b3;--accent:#ff7a59;--accent2:#8ab4ff;--line:#2a3140;--good:#7ee787;--warn:#ffd166}*{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top left,#1d2433 0,#0b0d12 42%);color:var(--text)}a{color:var(--accent2);text-decoration:none}a:hover{text-decoration:underline}main{max-width:1180px;margin:0 auto;padding:32px 18px 80px}header{margin-bottom:20px}.brand{display:flex;align-items:center;gap:14px}.logo{font-size:44px}.brand h1{font-size:34px;line-height:1.1;margin:0}.brand p{margin:6px 0 0;color:var(--muted)}.topnav{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.navlink{border:1px solid var(--line);border-radius:999px;padding:7px 11px;background:rgba(23,27,36,.7);color:var(--muted)}.dashboard{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:24px 0}.stat{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:16px;padding:16px}.stat strong{display:block;font-size:26px}.stat span{color:var(--muted);font-size:13px}.controls{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.9);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:18px;padding:14px;margin:18px 0 24px}.searchrow{display:grid;grid-template-columns:1fr auto auto;gap:10px}input,select,button{border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--text);font:inherit;padding:10px 12px}button{cursor:pointer}button:hover,.chip:hover,.topic-card:hover{border-color:var(--accent)}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.chip{border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:999px;padding:7px 11px;cursor:pointer;font-size:14px}.chip.active{background:rgba(255,122,89,.14);color:var(--text);border-color:var(--accent)}.section-title{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:30px 0 12px}.section-title h2{margin:0}.section-title p{margin:0;color:var(--muted);font-size:14px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.item{background:rgba(23,27,36,.92);border:1px solid var(--line);border-radius:16px;padding:16px;min-width:0}.item.hidden{display:none}.item h3{font-size:17px;line-height:1.35;margin:0 0 8px}.meta{display:flex;gap:7px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:13px}.tag{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:1px 8px;font-size:12px;color:var(--muted)}.tag.high{border-color:rgba(255,122,89,.7);color:#ffb199}.tag.medium{border-color:rgba(138,180,255,.6);color:#bcd4ff}.summary{margin:10px 0 0;color:var(--text)}details{margin-top:10px;color:var(--muted)}summary{cursor:pointer;color:var(--accent2)}.note{margin:10px 0 0;border-left:3px solid var(--accent);padding-left:10px;color:var(--text)}.topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.topic-card{display:block;text-align:left;background:rgba(23,27,36,.84);border:1px solid var(--line);border-radius:16px;padding:14px;color:var(--text)}.topic-card h3{margin:0 0 6px}.topic-card p{margin:0;color:var(--muted);font-size:14px}.category-block{margin:22px 0}.category-head{display:flex;justify-content:space-between;gap:12px;align-items:end;margin-bottom:10px}.category-head h3{margin:0}.category-head p{margin:4px 0 0;color:var(--muted);font-size:14px}.list{display:grid;gap:10px}.compact{padding:13px}.compact .summary{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.empty{border:1px dashed var(--line);border-radius:16px;padding:28px;text-align:center;color:var(--muted)}.archive-group{margin:30px 0}.archive-group h2{border-bottom:1px solid var(--line);padding-bottom:8px}.breadcrumb{color:var(--muted);font-size:14px;margin-bottom:12px}footer{margin-top:42px;color:var(--muted);font-size:13px}@media (max-width:800px){main{padding:24px 14px 60px}.dashboard{grid-template-columns:repeat(2,minmax(0,1fr))}.grid,.topics{grid-template-columns:1fr}.searchrow{grid-template-columns:1fr}.controls{position:static}.brand h1{font-size:28px}}
 '''
@@ -63,6 +80,7 @@ def nav(prefix=''):
     return f'''<nav class="topnav">
 <a class="navlink" href="{prefix}index.html">Dashboard</a>
 <a class="navlink" href="{prefix}archive.html">Archive</a>
+<a class="navlink" href="{prefix}feed.xml">RSS</a>
 <a class="navlink" href="{prefix}data/items.json">Raw JSON</a>
 </nav>'''
 
@@ -266,8 +284,56 @@ def build_category_pages():
         parts.append(page_end())
         (docs / 'categories' / f'{category["id"]}.html').write_text('\n'.join(parts))
 
+def build_rss_feed(path, title, description, feed_items, link_path=''):
+    latest = feed_items[:50]
+    parts = [f"""<?xml version=\"1.0\" encoding=\"utf-8\"?>
+<rss version=\"2.0\">
+<channel>
+<title>{xml_esc(title)}</title>
+<link>{xml_esc(site_url(link_path))}</link>
+<description>{xml_esc(description)}</description>
+<language>zh-Hant</language>
+<lastBuildDate>{xml_esc(rss_date())}</lastBuildDate>"""]
+    for item in latest:
+        topic_id = item.get('topic')
+        category_id = item.get('category') or topic_to_category.get(topic_id, 'other')
+        title_text = f"[{category_names.get(category_id, category_id)} / {topic_names.get(topic_id, topic_id)}] {item.get('title') or '(untitled)'}"
+        url = item.get('url') or site_url(f'topics/{topic_id}.html')
+        summary = item.get('summary') or ''
+        note = item.get('longxiaNote') or ''
+        description_html = summary + (f"\n\n龍蝦判斷：{note}" if note else '')
+        parts.append(f"""<item>
+<title>{xml_esc(title_text)}</title>
+<link>{xml_esc(url)}</link>
+<guid isPermaLink=\"false\">{xml_esc(url + '#' + (item.get('foundAt') or updated))}</guid>
+<pubDate>{xml_esc(rss_date(item.get('published') or item.get('foundAt')))}</pubDate>
+<category>{xml_esc(category_names.get(category_id, category_id))}</category>
+<description>{xml_esc(description_html)}</description>
+</item>""")
+    parts.append('</channel>\n</rss>')
+    (docs / path).write_text('\n'.join(parts))
+
+def build_feeds():
+    build_rss_feed('feed.xml', 'Longxia Info Board', 'Longxia Info Board 全部資訊更新', items, '')
+    for category in categories:
+        cid = category['id']
+        build_rss_feed(f'feeds/{cid}.xml', f'Longxia Info Board · {category.get("name", cid)}', category.get('description') or f'{category.get("name", cid)} 更新', by_category.get(cid, []), f'categories/{cid}.html')
+
+def build_sitemap():
+    urls = ['index.html', 'archive.html', 'feed.xml']
+    urls += [f'categories/{c["id"]}.html' for c in categories]
+    urls += [f'topics/{t["id"]}.html' for t in topics]
+    urls += [f'feeds/{c["id"]}.xml' for c in categories]
+    parts = ['<?xml version="1.0" encoding="utf-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for u in urls:
+        parts.append(f'<url><loc>{xml_esc(site_url(u))}</loc><lastmod>{xml_esc(updated[:10])}</lastmod></url>')
+    parts.append('</urlset>')
+    (docs / 'sitemap.xml').write_text('\n'.join(parts))
+
 build_index()
 build_archive()
 build_topic_pages()
 build_category_pages()
+build_feeds()
+build_sitemap()
 (docs / '.nojekyll').touch()
