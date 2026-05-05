@@ -1,46 +1,204 @@
 <!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Longxia Info Board</title><style>
-:root{color-scheme:light dark;--bg:#0f1115;--card:#171a21;--text:#e9edf3;--muted:#9aa4b2;--accent:#ff7a59;--line:#2a2f3a}body{margin:0;font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}main{max-width:980px;margin:0 auto;padding:40px 20px 80px}header{margin-bottom:28px}.brand{display:flex;align-items:center;gap:12px}h1{font-size:34px;margin:0}p{margin:8px 0;color:var(--muted)}.topic{margin:28px 0}.topic h2{border-bottom:1px solid var(--line);padding-bottom:8px}.item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}.item h3{margin:0 0 6px;font-size:18px}.meta{font-size:13px;color:var(--muted)}.summary{color:var(--text)}.note{border-left:3px solid var(--accent);padding-left:10px}.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:1px 8px;font-size:12px;color:var(--muted)}a{color:#8ab4ff}.empty{color:var(--muted);font-style:italic}footer{margin-top:40px;color:var(--muted);font-size:13px}
-</style></head><body><main><header><div class="brand"><div style="font-size:42px">🦞</div><div><h1>Longxia Info Board</h1><p>自動搜尋、整理、去重的資訊看板。最後更新：2026-05-05T13:22:00Z</p></div></div></header>
-<section class="topic" id="openai"><h2>OpenAI</h2>
-<article class="item"><h3><a href="https://openai.com/news/" rel="noopener noreferrer">OpenAI News</a></h3><div class="meta">5 days ago · openai.com · <span class="tag">high</span></div><p class="summary">OpenAI 官方 News 頁近期列出 Advanced Account Security、OpenAI on AWS、Microsoft partnership next phase、Symphony orchestration spec、GPT-5.5 等更新。</p>
-<p class="note">官方 News 頁適合當 OpenAI 主題的 canonical source，後續更新應優先抓這裡。</p>
+:root{color-scheme:light dark;--bg:#0b0d12;--bg2:#11141b;--card:#171b24;--card2:#1d2230;--text:#edf1f7;--muted:#98a3b3;--accent:#ff7a59;--accent2:#8ab4ff;--line:#2a3140;--good:#7ee787;--warn:#ffd166}*{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top left,#1d2433 0,#0b0d12 42%);color:var(--text)}a{color:var(--accent2);text-decoration:none}a:hover{text-decoration:underline}main{max-width:1180px;margin:0 auto;padding:32px 18px 80px}header{margin-bottom:20px}.brand{display:flex;align-items:center;gap:14px}.logo{font-size:44px}.brand h1{font-size:34px;line-height:1.1;margin:0}.brand p{margin:6px 0 0;color:var(--muted)}.dashboard{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:24px 0}.stat{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:16px;padding:16px}.stat strong{display:block;font-size:26px}.stat span{color:var(--muted);font-size:13px}.controls{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.9);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:18px;padding:14px;margin:18px 0 24px}.searchrow{display:grid;grid-template-columns:1fr auto auto;gap:10px}input,select,button{border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--text);font:inherit;padding:10px 12px}button{cursor:pointer}button:hover,.chip:hover{border-color:var(--accent)}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.chip{border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:999px;padding:7px 11px;cursor:pointer;font-size:14px}.chip.active{background:rgba(255,122,89,.14);color:var(--text);border-color:var(--accent)}.section-title{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:30px 0 12px}.section-title h2{margin:0}.section-title p{margin:0;color:var(--muted);font-size:14px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.item{background:rgba(23,27,36,.92);border:1px solid var(--line);border-radius:16px;padding:16px;min-width:0}.item.hidden{display:none}.item h3{font-size:17px;line-height:1.35;margin:0 0 8px}.meta{display:flex;gap:7px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:13px}.tag{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:1px 8px;font-size:12px;color:var(--muted)}.tag.high{border-color:rgba(255,122,89,.7);color:#ffb199}.tag.medium{border-color:rgba(138,180,255,.6);color:#bcd4ff}.summary{margin:10px 0 0;color:var(--text)}details{margin-top:10px;color:var(--muted)}summary{cursor:pointer;color:var(--accent2)}.note{margin:10px 0 0;border-left:3px solid var(--accent);padding-left:10px;color:var(--text)}.topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.topic-card{background:rgba(23,27,36,.84);border:1px solid var(--line);border-radius:16px;padding:14px}.topic-card h3{margin:0 0 6px}.topic-card p{margin:0;color:var(--muted);font-size:14px}.list{display:grid;gap:10px}.compact{padding:13px}.compact .summary{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.empty{border:1px dashed var(--line);border-radius:16px;padding:28px;text-align:center;color:var(--muted)}footer{margin-top:42px;color:var(--muted);font-size:13px}@media (max-width:800px){main{padding:24px 14px 60px}.dashboard{grid-template-columns:repeat(2,minmax(0,1fr))}.grid,.topics{grid-template-columns:1fr}.searchrow{grid-template-columns:1fr}.controls{position:static}.brand h1{font-size:28px}}
+</style></head><body><main>
+<header><div class="brand"><div class="logo">🦞</div><div><h1>Longxia Info Board</h1><p>自動搜尋、整理、去重的資訊看板。最後更新：2026-05-05T13:22:00Z</p></div></div></header>
+<section class="dashboard">
+  <div class="stat"><strong>10</strong><span>總資料</span></div>
+  <div class="stat"><strong>6</strong><span>追蹤主題</span></div>
+  <div class="stat"><strong>6</strong><span>高重要性</span></div>
+  <div class="stat"><strong id="visibleCount">10</strong><span>目前顯示</span></div>
+</section>
+<section class="controls" aria-label="filters">
+  <div class="searchrow">
+    <input id="search" type="search" placeholder="搜尋標題、來源、摘要、龍蝦判斷…" autocomplete="off">
+    <select id="importance"><option value="all">全部重要性</option><option value="high">high</option><option value="medium">medium</option><option value="low">low</option></select>
+    <button id="reset" type="button">重設</button>
+  </div>
+  <div class="chips" id="chips"><button class="chip active" data-topic="all">All</button>
+<button class="chip" data-topic="openai">OpenAI <span>(2)</span></button>
+<button class="chip" data-topic="ai-agents">AI agents <span>(1)</span></button>
+<button class="chip" data-topic="openclaw">OpenClaw <span>(1)</span></button>
+<button class="chip" data-topic="anthropic">Anthropic <span>(2)</span></button>
+<button class="chip" data-topic="github-copilot">GitHub Copilot <span>(2)</span></button>
+<button class="chip" data-topic="gemini">Gemini <span>(2)</span></button>
+</div></section>
+<section class="section-title"><div><h2>🔥 高重要性</h2><p>優先查看最可能需要追蹤的變化。</p></div></section><section class="grid" id="highlights">
+<article class="item compact" data-topic="openai" data-importance="high">
+<h3><a href="https://openai.com/news/" rel="noopener noreferrer" target="_blank">OpenAI News</a></h3>
+<div class="meta"><span>OpenAI</span><span>·</span><span>5 days ago</span><span>·</span><span>openai.com</span><span class="tag high">high</span></div>
+<p class="summary">OpenAI 官方 News 頁近期列出 Advanced Account Security、OpenAI on AWS、Microsoft partnership next phase、Symphony orchestration spec、GPT-5.5 等更新。</p><details><summary>龍蝦判斷</summary><p class="note">官方 News 頁適合當 OpenAI 主題的 canonical source，後續更新應優先抓這裡。</p></details>
 </article>
-<article class="item"><h3><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" rel="noopener noreferrer">AWS and OpenAI expanded partnership</a></h3><div class="meta">6 days ago · aws.amazon.com · <span class="tag">high</span></div><p class="summary">AWS 宣布與 OpenAI 擴大合作，將 OpenAI 最新模型帶到 Amazon Bedrock，並推出 Codex on Bedrock 與 Bedrock Managed Agents limited preview。</p>
-<p class="note">這是平台分發與企業部署面向的重要訊號，值得追蹤後續 GA 時程。</p>
+<article class="item compact" data-topic="openai" data-importance="high">
+<h3><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" rel="noopener noreferrer" target="_blank">AWS and OpenAI expanded partnership</a></h3>
+<div class="meta"><span>OpenAI</span><span>·</span><span>6 days ago</span><span>·</span><span>aws.amazon.com</span><span class="tag high">high</span></div>
+<p class="summary">AWS 宣布與 OpenAI 擴大合作，將 OpenAI 最新模型帶到 Amazon Bedrock，並推出 Codex on Bedrock 與 Bedrock Managed Agents limited preview。</p><details><summary>龍蝦判斷</summary><p class="note">這是平台分發與企業部署面向的重要訊號，值得追蹤後續 GA 時程。</p></details>
+</article>
+<article class="item compact" data-topic="openclaw" data-importance="high">
+<h3><a href="https://github.com/openclaw/openclaw/releases" rel="noopener noreferrer" target="_blank">OpenClaw Releases</a></h3>
+<div class="meta"><span>OpenClaw</span><span>·</span><span>2 days ago</span><span>·</span><span>github.com</span><span class="tag high">high</span></div>
+<p class="summary">近期 OpenClaw release notes 提到 memory/status 將 sqlite-vec store readiness 與 embedding-provider readiness 拆開，讓 memory status --deep 診斷更清楚。</p><details><summary>龍蝦判斷</summary><p class="note">這剛好對應我們今天調 Gemini memory embedding 時看到的狀態欄位。</p></details>
+</article>
+<article class="item compact" data-topic="github-copilot" data-importance="high">
+<h3><a href="https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/" rel="noopener noreferrer" target="_blank">GitHub Copilot in Visual Studio — April update</a></h3>
+<div class="meta"><span>GitHub Copilot</span><span>·</span><span>5 days ago</span><span>·</span><span>github.blog</span><span class="tag high">high</span></div>
+<p class="summary">GitHub Copilot Visual Studio April update 聚焦 agentic workflows，包含 IDE 內啟動 cloud agent sessions、custom agents user-level support、Debugger agent。</p><details><summary>龍蝦判斷</summary><p class="note">Copilot 正往 IDE 內 agent workflow 擴張，值得持續追 VS Code/Visual Studio 兩條線。</p></details>
+</article>
+<article class="item compact" data-topic="gemini" data-importance="high">
+<h3><a href="https://ai.google.dev/gemini-api/docs/changelog" rel="noopener noreferrer" target="_blank">Gemini API release notes</a></h3>
+<div class="meta"><span>Gemini</span><span>·</span><span>5 days ago</span><span>·</span><span>ai.google.dev</span><span class="tag high">high</span></div>
+<p class="summary">Gemini API changelog 是 Gemini API 模型、embedding、deprecation 等更新的主要來源。近期搜尋結果提到部分 preview model deprecation。</p><details><summary>龍蝦判斷</summary><p class="note">我們目前 memory embedding 用 Gemini，這個 changelog 應列為高優先監控來源。</p></details>
+</article>
+<article class="item compact" data-topic="gemini" data-importance="high">
+<h3><a href="https://deepmind.google/models/gemini/" rel="noopener noreferrer" target="_blank">Gemini 3 — Google DeepMind</a></h3>
+<div class="meta"><span>Gemini</span><span>·</span><span>3 hours ago</span><span>·</span><span>deepmind.google</span><span class="tag high">high</span></div>
+<p class="summary">Google DeepMind 的 Gemini 頁面提到 Gemini 3 Pro 整合進部分開發者產品與 AI assistant 工作流。</p><details><summary>龍蝦判斷</summary><p class="note">模型代際與產品整合更新要與 Google AI/Gemini API changelog 交叉確認。</p></details>
 </article>
 </section>
-<section class="topic" id="ai-agents"><h2>AI agents</h2>
-<article class="item"><h3><a href="https://aiagentstore.ai/ai-agent-news/this-week" rel="noopener noreferrer">Daily AI Agent News - Last 7 Days</a></h3><div class="meta">2 days ago · aiagentstore.ai · <span class="tag">medium</span></div><p class="summary">AI agent 相關新聞彙整指出 autonomous agent traffic 與 machine-to-machine exchanges 正快速增加。</p>
-<p class="note">這類來源適合廣度掃描，但重要資訊要再回查原始發布來源。</p>
+<section class="section-title"><div><h2>🕒 最近更新</h2><p>最新收進看板的資訊。</p></div></section><section class="grid" id="recent">
+<article class="item compact" data-topic="openai" data-importance="high">
+<h3><a href="https://openai.com/news/" rel="noopener noreferrer" target="_blank">OpenAI News</a></h3>
+<div class="meta"><span>OpenAI</span><span>·</span><span>5 days ago</span><span>·</span><span>openai.com</span><span class="tag high">high</span></div>
+<p class="summary">OpenAI 官方 News 頁近期列出 Advanced Account Security、OpenAI on AWS、Microsoft partnership next phase、Symphony orchestration spec、GPT-5.5 等更新。</p><details><summary>龍蝦判斷</summary><p class="note">官方 News 頁適合當 OpenAI 主題的 canonical source，後續更新應優先抓這裡。</p></details>
+</article>
+<article class="item compact" data-topic="openai" data-importance="high">
+<h3><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" rel="noopener noreferrer" target="_blank">AWS and OpenAI expanded partnership</a></h3>
+<div class="meta"><span>OpenAI</span><span>·</span><span>6 days ago</span><span>·</span><span>aws.amazon.com</span><span class="tag high">high</span></div>
+<p class="summary">AWS 宣布與 OpenAI 擴大合作，將 OpenAI 最新模型帶到 Amazon Bedrock，並推出 Codex on Bedrock 與 Bedrock Managed Agents limited preview。</p><details><summary>龍蝦判斷</summary><p class="note">這是平台分發與企業部署面向的重要訊號，值得追蹤後續 GA 時程。</p></details>
+</article>
+<article class="item compact" data-topic="ai-agents" data-importance="medium">
+<h3><a href="https://aiagentstore.ai/ai-agent-news/this-week" rel="noopener noreferrer" target="_blank">Daily AI Agent News - Last 7 Days</a></h3>
+<div class="meta"><span>AI agents</span><span>·</span><span>2 days ago</span><span>·</span><span>aiagentstore.ai</span><span class="tag medium">medium</span></div>
+<p class="summary">AI agent 相關新聞彙整指出 autonomous agent traffic 與 machine-to-machine exchanges 正快速增加。</p><details><summary>龍蝦判斷</summary><p class="note">這類來源適合廣度掃描，但重要資訊要再回查原始發布來源。</p></details>
+</article>
+<article class="item compact" data-topic="openclaw" data-importance="high">
+<h3><a href="https://github.com/openclaw/openclaw/releases" rel="noopener noreferrer" target="_blank">OpenClaw Releases</a></h3>
+<div class="meta"><span>OpenClaw</span><span>·</span><span>2 days ago</span><span>·</span><span>github.com</span><span class="tag high">high</span></div>
+<p class="summary">近期 OpenClaw release notes 提到 memory/status 將 sqlite-vec store readiness 與 embedding-provider readiness 拆開，讓 memory status --deep 診斷更清楚。</p><details><summary>龍蝦判斷</summary><p class="note">這剛好對應我們今天調 Gemini memory embedding 時看到的狀態欄位。</p></details>
+</article>
+<article class="item compact" data-topic="anthropic" data-importance="medium">
+<h3><a href="https://www.anthropic.com/news" rel="noopener noreferrer" target="_blank">Anthropic News</a></h3>
+<div class="meta"><span>Anthropic</span><span>·</span><span>4 hours ago</span><span>·</span><span>anthropic.com</span><span class="tag medium">medium</span></div>
+<p class="summary">Anthropic 官方 News 頁近期有 Long-Term Benefit Trust board appointment 等公告。</p><details><summary>龍蝦判斷</summary><p class="note">官方頁作為主來源；產品/模型更新需另外追 Claude release notes 與官方 blog。</p></details>
+</article>
+<article class="item compact" data-topic="anthropic" data-importance="medium">
+<h3><a href="https://releasebot.io/updates/anthropic" rel="noopener noreferrer" target="_blank">Anthropic expands Claude for creative work</a></h3>
+<div class="meta"><span>Anthropic</span><span>·</span><span>13 hours ago</span><span>·</span><span>releasebot.io</span><span class="tag medium">medium</span></div>
+<p class="summary">第三方彙整指出 Anthropic 擴展 Claude creative workflow connectors，包含 Blender、Adobe、Autodesk、Ableton、Splice 等。</p><details><summary>龍蝦判斷</summary><p class="note">需後續用官方來源確認細節，但方向上是 Claude 往創作工具鏈深入。</p></details>
+</article>
+<article class="item compact" data-topic="github-copilot" data-importance="high">
+<h3><a href="https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/" rel="noopener noreferrer" target="_blank">GitHub Copilot in Visual Studio — April update</a></h3>
+<div class="meta"><span>GitHub Copilot</span><span>·</span><span>5 days ago</span><span>·</span><span>github.blog</span><span class="tag high">high</span></div>
+<p class="summary">GitHub Copilot Visual Studio April update 聚焦 agentic workflows，包含 IDE 內啟動 cloud agent sessions、custom agents user-level support、Debugger agent。</p><details><summary>龍蝦判斷</summary><p class="note">Copilot 正往 IDE 內 agent workflow 擴張，值得持續追 VS Code/Visual Studio 兩條線。</p></details>
+</article>
+<article class="item compact" data-topic="github-copilot" data-importance="medium">
+<h3><a href="https://github.com/github/copilot-cli/releases" rel="noopener noreferrer" target="_blank">github/copilot-cli releases</a></h3>
+<div class="meta"><span>GitHub Copilot</span><span>·</span><span>1 day ago</span><span>·</span><span>github.com</span><span class="tag medium">medium</span></div>
+<p class="summary">Copilot CLI release notes 提到 --config-dir 傳遞修正，並建議改用 COPILOT_HOME。</p><details><summary>龍蝦判斷</summary><p class="note">偏工具維護更新；若之後我們用 Copilot CLI，自動化環境要留意 COPILOT_HOME。</p></details>
 </article>
 </section>
-<section class="topic" id="openclaw"><h2>OpenClaw</h2>
-<article class="item"><h3><a href="https://github.com/openclaw/openclaw/releases" rel="noopener noreferrer">OpenClaw Releases</a></h3><div class="meta">2 days ago · github.com · <span class="tag">high</span></div><p class="summary">近期 OpenClaw release notes 提到 memory/status 將 sqlite-vec store readiness 與 embedding-provider readiness 拆開，讓 memory status --deep 診斷更清楚。</p>
-<p class="note">這剛好對應我們今天調 Gemini memory embedding 時看到的狀態欄位。</p>
-</article>
+<section class="section-title"><div><h2>📚 Topics</h2><p>快速跳到某個主題；主題變多也不怕一路往下找。</p></div></section><section class="topics">
+<button class="topic-card" data-topic-jump="openai"><h3>OpenAI · 2</h3><p>最新：5 days ago</p></button>
+<button class="topic-card" data-topic-jump="ai-agents"><h3>AI agents · 1</h3><p>最新：2 days ago</p></button>
+<button class="topic-card" data-topic-jump="openclaw"><h3>OpenClaw · 1</h3><p>最新：2 days ago</p></button>
+<button class="topic-card" data-topic-jump="anthropic"><h3>Anthropic · 2</h3><p>最新：4 hours ago</p></button>
+<button class="topic-card" data-topic-jump="github-copilot"><h3>GitHub Copilot · 2</h3><p>最新：5 days ago</p></button>
+<button class="topic-card" data-topic-jump="gemini"><h3>Gemini · 2</h3><p>最新：5 days ago</p></button>
 </section>
-<section class="topic" id="anthropic"><h2>Anthropic</h2>
-<article class="item"><h3><a href="https://www.anthropic.com/news" rel="noopener noreferrer">Anthropic News</a></h3><div class="meta">4 hours ago · anthropic.com · <span class="tag">medium</span></div><p class="summary">Anthropic 官方 News 頁近期有 Long-Term Benefit Trust board appointment 等公告。</p>
-<p class="note">官方頁作為主來源；產品/模型更新需另外追 Claude release notes 與官方 blog。</p>
+<section class="section-title"><div><h2>全部資訊</h2><p>可用搜尋、topic、importance 即時篩選。</p></div></section><section class="list" id="allItems">
+<article class="item" data-topic="openai" data-importance="high">
+<h3><a href="https://openai.com/news/" rel="noopener noreferrer" target="_blank">OpenAI News</a></h3>
+<div class="meta"><span>OpenAI</span><span>·</span><span>5 days ago</span><span>·</span><span>openai.com</span><span class="tag high">high</span></div>
+<p class="summary">OpenAI 官方 News 頁近期列出 Advanced Account Security、OpenAI on AWS、Microsoft partnership next phase、Symphony orchestration spec、GPT-5.5 等更新。</p><details><summary>龍蝦判斷</summary><p class="note">官方 News 頁適合當 OpenAI 主題的 canonical source，後續更新應優先抓這裡。</p></details>
 </article>
-<article class="item"><h3><a href="https://releasebot.io/updates/anthropic" rel="noopener noreferrer">Anthropic expands Claude for creative work</a></h3><div class="meta">13 hours ago · releasebot.io · <span class="tag">medium</span></div><p class="summary">第三方彙整指出 Anthropic 擴展 Claude creative workflow connectors，包含 Blender、Adobe、Autodesk、Ableton、Splice 等。</p>
-<p class="note">需後續用官方來源確認細節，但方向上是 Claude 往創作工具鏈深入。</p>
+<article class="item" data-topic="openai" data-importance="high">
+<h3><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/" rel="noopener noreferrer" target="_blank">AWS and OpenAI expanded partnership</a></h3>
+<div class="meta"><span>OpenAI</span><span>·</span><span>6 days ago</span><span>·</span><span>aws.amazon.com</span><span class="tag high">high</span></div>
+<p class="summary">AWS 宣布與 OpenAI 擴大合作，將 OpenAI 最新模型帶到 Amazon Bedrock，並推出 Codex on Bedrock 與 Bedrock Managed Agents limited preview。</p><details><summary>龍蝦判斷</summary><p class="note">這是平台分發與企業部署面向的重要訊號，值得追蹤後續 GA 時程。</p></details>
 </article>
-</section>
-<section class="topic" id="github-copilot"><h2>GitHub Copilot</h2>
-<article class="item"><h3><a href="https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/" rel="noopener noreferrer">GitHub Copilot in Visual Studio — April update</a></h3><div class="meta">5 days ago · github.blog · <span class="tag">high</span></div><p class="summary">GitHub Copilot Visual Studio April update 聚焦 agentic workflows，包含 IDE 內啟動 cloud agent sessions、custom agents user-level support、Debugger agent。</p>
-<p class="note">Copilot 正往 IDE 內 agent workflow 擴張，值得持續追 VS Code/Visual Studio 兩條線。</p>
+<article class="item" data-topic="ai-agents" data-importance="medium">
+<h3><a href="https://aiagentstore.ai/ai-agent-news/this-week" rel="noopener noreferrer" target="_blank">Daily AI Agent News - Last 7 Days</a></h3>
+<div class="meta"><span>AI agents</span><span>·</span><span>2 days ago</span><span>·</span><span>aiagentstore.ai</span><span class="tag medium">medium</span></div>
+<p class="summary">AI agent 相關新聞彙整指出 autonomous agent traffic 與 machine-to-machine exchanges 正快速增加。</p><details><summary>龍蝦判斷</summary><p class="note">這類來源適合廣度掃描，但重要資訊要再回查原始發布來源。</p></details>
 </article>
-<article class="item"><h3><a href="https://github.com/github/copilot-cli/releases" rel="noopener noreferrer">github/copilot-cli releases</a></h3><div class="meta">1 day ago · github.com · <span class="tag">medium</span></div><p class="summary">Copilot CLI release notes 提到 --config-dir 傳遞修正，並建議改用 COPILOT_HOME。</p>
-<p class="note">偏工具維護更新；若之後我們用 Copilot CLI，自動化環境要留意 COPILOT_HOME。</p>
+<article class="item" data-topic="openclaw" data-importance="high">
+<h3><a href="https://github.com/openclaw/openclaw/releases" rel="noopener noreferrer" target="_blank">OpenClaw Releases</a></h3>
+<div class="meta"><span>OpenClaw</span><span>·</span><span>2 days ago</span><span>·</span><span>github.com</span><span class="tag high">high</span></div>
+<p class="summary">近期 OpenClaw release notes 提到 memory/status 將 sqlite-vec store readiness 與 embedding-provider readiness 拆開，讓 memory status --deep 診斷更清楚。</p><details><summary>龍蝦判斷</summary><p class="note">這剛好對應我們今天調 Gemini memory embedding 時看到的狀態欄位。</p></details>
 </article>
-</section>
-<section class="topic" id="gemini"><h2>Gemini</h2>
-<article class="item"><h3><a href="https://ai.google.dev/gemini-api/docs/changelog" rel="noopener noreferrer">Gemini API release notes</a></h3><div class="meta">5 days ago · ai.google.dev · <span class="tag">high</span></div><p class="summary">Gemini API changelog 是 Gemini API 模型、embedding、deprecation 等更新的主要來源。近期搜尋結果提到部分 preview model deprecation。</p>
-<p class="note">我們目前 memory embedding 用 Gemini，這個 changelog 應列為高優先監控來源。</p>
+<article class="item" data-topic="anthropic" data-importance="medium">
+<h3><a href="https://www.anthropic.com/news" rel="noopener noreferrer" target="_blank">Anthropic News</a></h3>
+<div class="meta"><span>Anthropic</span><span>·</span><span>4 hours ago</span><span>·</span><span>anthropic.com</span><span class="tag medium">medium</span></div>
+<p class="summary">Anthropic 官方 News 頁近期有 Long-Term Benefit Trust board appointment 等公告。</p><details><summary>龍蝦判斷</summary><p class="note">官方頁作為主來源；產品/模型更新需另外追 Claude release notes 與官方 blog。</p></details>
 </article>
-<article class="item"><h3><a href="https://deepmind.google/models/gemini/" rel="noopener noreferrer">Gemini 3 — Google DeepMind</a></h3><div class="meta">3 hours ago · deepmind.google · <span class="tag">high</span></div><p class="summary">Google DeepMind 的 Gemini 頁面提到 Gemini 3 Pro 整合進部分開發者產品與 AI assistant 工作流。</p>
-<p class="note">模型代際與產品整合更新要與 Google AI/Gemini API changelog 交叉確認。</p>
+<article class="item" data-topic="anthropic" data-importance="medium">
+<h3><a href="https://releasebot.io/updates/anthropic" rel="noopener noreferrer" target="_blank">Anthropic expands Claude for creative work</a></h3>
+<div class="meta"><span>Anthropic</span><span>·</span><span>13 hours ago</span><span>·</span><span>releasebot.io</span><span class="tag medium">medium</span></div>
+<p class="summary">第三方彙整指出 Anthropic 擴展 Claude creative workflow connectors，包含 Blender、Adobe、Autodesk、Ableton、Splice 等。</p><details><summary>龍蝦判斷</summary><p class="note">需後續用官方來源確認細節，但方向上是 Claude 往創作工具鏈深入。</p></details>
 </article>
-</section>
-<footer>Generated by Longxia 🦞. Sources are linked to original publishers.</footer></main></body></html>
+<article class="item" data-topic="github-copilot" data-importance="high">
+<h3><a href="https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/" rel="noopener noreferrer" target="_blank">GitHub Copilot in Visual Studio — April update</a></h3>
+<div class="meta"><span>GitHub Copilot</span><span>·</span><span>5 days ago</span><span>·</span><span>github.blog</span><span class="tag high">high</span></div>
+<p class="summary">GitHub Copilot Visual Studio April update 聚焦 agentic workflows，包含 IDE 內啟動 cloud agent sessions、custom agents user-level support、Debugger agent。</p><details><summary>龍蝦判斷</summary><p class="note">Copilot 正往 IDE 內 agent workflow 擴張，值得持續追 VS Code/Visual Studio 兩條線。</p></details>
+</article>
+<article class="item" data-topic="github-copilot" data-importance="medium">
+<h3><a href="https://github.com/github/copilot-cli/releases" rel="noopener noreferrer" target="_blank">github/copilot-cli releases</a></h3>
+<div class="meta"><span>GitHub Copilot</span><span>·</span><span>1 day ago</span><span>·</span><span>github.com</span><span class="tag medium">medium</span></div>
+<p class="summary">Copilot CLI release notes 提到 --config-dir 傳遞修正，並建議改用 COPILOT_HOME。</p><details><summary>龍蝦判斷</summary><p class="note">偏工具維護更新；若之後我們用 Copilot CLI，自動化環境要留意 COPILOT_HOME。</p></details>
+</article>
+<article class="item" data-topic="gemini" data-importance="high">
+<h3><a href="https://ai.google.dev/gemini-api/docs/changelog" rel="noopener noreferrer" target="_blank">Gemini API release notes</a></h3>
+<div class="meta"><span>Gemini</span><span>·</span><span>5 days ago</span><span>·</span><span>ai.google.dev</span><span class="tag high">high</span></div>
+<p class="summary">Gemini API changelog 是 Gemini API 模型、embedding、deprecation 等更新的主要來源。近期搜尋結果提到部分 preview model deprecation。</p><details><summary>龍蝦判斷</summary><p class="note">我們目前 memory embedding 用 Gemini，這個 changelog 應列為高優先監控來源。</p></details>
+</article>
+<article class="item" data-topic="gemini" data-importance="high">
+<h3><a href="https://deepmind.google/models/gemini/" rel="noopener noreferrer" target="_blank">Gemini 3 — Google DeepMind</a></h3>
+<div class="meta"><span>Gemini</span><span>·</span><span>3 hours ago</span><span>·</span><span>deepmind.google</span><span class="tag high">high</span></div>
+<p class="summary">Google DeepMind 的 Gemini 頁面提到 Gemini 3 Pro 整合進部分開發者產品與 AI assistant 工作流。</p><details><summary>龍蝦判斷</summary><p class="note">模型代際與產品整合更新要與 Google AI/Gemini API changelog 交叉確認。</p></details>
+</article>
+</section><div class="empty" id="empty" hidden>找不到符合條件的資訊。</div>
+<footer>Generated by Longxia 🦞. Sources are linked to original publishers.</footer><script>
+const items = [{"topic": "openai", "topicName": "OpenAI", "title": "OpenAI News", "url": "https://openai.com/news/", "published": "5 days ago", "source": "openai.com", "importance": "high", "summary": "OpenAI 官方 News 頁近期列出 Advanced Account Security、OpenAI on AWS、Microsoft partnership next phase、Symphony orchestration spec、GPT-5.5 等更新。", "longxiaNote": "官方 News 頁適合當 OpenAI 主題的 canonical source，後續更新應優先抓這裡。", "searchText": "openai news openai.com openai 官方 news 頁近期列出 advanced account security、openai on aws、microsoft partnership next phase、symphony orchestration spec、gpt-5.5 等更新。 官方 news 頁適合當 openai 主題的 canonical source，後續更新應優先抓這裡。 openai"}, {"topic": "openai", "topicName": "OpenAI", "title": "AWS and OpenAI expanded partnership", "url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/", "published": "6 days ago", "source": "aws.amazon.com", "importance": "high", "summary": "AWS 宣布與 OpenAI 擴大合作，將 OpenAI 最新模型帶到 Amazon Bedrock，並推出 Codex on Bedrock 與 Bedrock Managed Agents limited preview。", "longxiaNote": "這是平台分發與企業部署面向的重要訊號，值得追蹤後續 GA 時程。", "searchText": "aws and openai expanded partnership aws.amazon.com aws 宣布與 openai 擴大合作，將 openai 最新模型帶到 amazon bedrock，並推出 codex on bedrock 與 bedrock managed agents limited preview。 這是平台分發與企業部署面向的重要訊號，值得追蹤後續 ga 時程。 openai"}, {"topic": "ai-agents", "topicName": "AI agents", "title": "Daily AI Agent News - Last 7 Days", "url": "https://aiagentstore.ai/ai-agent-news/this-week", "published": "2 days ago", "source": "aiagentstore.ai", "importance": "medium", "summary": "AI agent 相關新聞彙整指出 autonomous agent traffic 與 machine-to-machine exchanges 正快速增加。", "longxiaNote": "這類來源適合廣度掃描，但重要資訊要再回查原始發布來源。", "searchText": "daily ai agent news - last 7 days aiagentstore.ai ai agent 相關新聞彙整指出 autonomous agent traffic 與 machine-to-machine exchanges 正快速增加。 這類來源適合廣度掃描，但重要資訊要再回查原始發布來源。 ai agents"}, {"topic": "openclaw", "topicName": "OpenClaw", "title": "OpenClaw Releases", "url": "https://github.com/openclaw/openclaw/releases", "published": "2 days ago", "source": "github.com", "importance": "high", "summary": "近期 OpenClaw release notes 提到 memory/status 將 sqlite-vec store readiness 與 embedding-provider readiness 拆開，讓 memory status --deep 診斷更清楚。", "longxiaNote": "這剛好對應我們今天調 Gemini memory embedding 時看到的狀態欄位。", "searchText": "openclaw releases github.com 近期 openclaw release notes 提到 memory/status 將 sqlite-vec store readiness 與 embedding-provider readiness 拆開，讓 memory status --deep 診斷更清楚。 這剛好對應我們今天調 gemini memory embedding 時看到的狀態欄位。 openclaw"}, {"topic": "anthropic", "topicName": "Anthropic", "title": "Anthropic News", "url": "https://www.anthropic.com/news", "published": "4 hours ago", "source": "anthropic.com", "importance": "medium", "summary": "Anthropic 官方 News 頁近期有 Long-Term Benefit Trust board appointment 等公告。", "longxiaNote": "官方頁作為主來源；產品/模型更新需另外追 Claude release notes 與官方 blog。", "searchText": "anthropic news anthropic.com anthropic 官方 news 頁近期有 long-term benefit trust board appointment 等公告。 官方頁作為主來源；產品/模型更新需另外追 claude release notes 與官方 blog。 anthropic"}, {"topic": "anthropic", "topicName": "Anthropic", "title": "Anthropic expands Claude for creative work", "url": "https://releasebot.io/updates/anthropic", "published": "13 hours ago", "source": "releasebot.io", "importance": "medium", "summary": "第三方彙整指出 Anthropic 擴展 Claude creative workflow connectors，包含 Blender、Adobe、Autodesk、Ableton、Splice 等。", "longxiaNote": "需後續用官方來源確認細節，但方向上是 Claude 往創作工具鏈深入。", "searchText": "anthropic expands claude for creative work releasebot.io 第三方彙整指出 anthropic 擴展 claude creative workflow connectors，包含 blender、adobe、autodesk、ableton、splice 等。 需後續用官方來源確認細節，但方向上是 claude 往創作工具鏈深入。 anthropic"}, {"topic": "github-copilot", "topicName": "GitHub Copilot", "title": "GitHub Copilot in Visual Studio — April update", "url": "https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/", "published": "5 days ago", "source": "github.blog", "importance": "high", "summary": "GitHub Copilot Visual Studio April update 聚焦 agentic workflows，包含 IDE 內啟動 cloud agent sessions、custom agents user-level support、Debugger agent。", "longxiaNote": "Copilot 正往 IDE 內 agent workflow 擴張，值得持續追 VS Code/Visual Studio 兩條線。", "searchText": "github copilot in visual studio — april update github.blog github copilot visual studio april update 聚焦 agentic workflows，包含 ide 內啟動 cloud agent sessions、custom agents user-level support、debugger agent。 copilot 正往 ide 內 agent workflow 擴張，值得持續追 vs code/visual studio 兩條線。 github copilot"}, {"topic": "github-copilot", "topicName": "GitHub Copilot", "title": "github/copilot-cli releases", "url": "https://github.com/github/copilot-cli/releases", "published": "1 day ago", "source": "github.com", "importance": "medium", "summary": "Copilot CLI release notes 提到 --config-dir 傳遞修正，並建議改用 COPILOT_HOME。", "longxiaNote": "偏工具維護更新；若之後我們用 Copilot CLI，自動化環境要留意 COPILOT_HOME。", "searchText": "github/copilot-cli releases github.com copilot cli release notes 提到 --config-dir 傳遞修正，並建議改用 copilot_home。 偏工具維護更新；若之後我們用 copilot cli，自動化環境要留意 copilot_home。 github copilot"}, {"topic": "gemini", "topicName": "Gemini", "title": "Gemini API release notes", "url": "https://ai.google.dev/gemini-api/docs/changelog", "published": "5 days ago", "source": "ai.google.dev", "importance": "high", "summary": "Gemini API changelog 是 Gemini API 模型、embedding、deprecation 等更新的主要來源。近期搜尋結果提到部分 preview model deprecation。", "longxiaNote": "我們目前 memory embedding 用 Gemini，這個 changelog 應列為高優先監控來源。", "searchText": "gemini api release notes ai.google.dev gemini api changelog 是 gemini api 模型、embedding、deprecation 等更新的主要來源。近期搜尋結果提到部分 preview model deprecation。 我們目前 memory embedding 用 gemini，這個 changelog 應列為高優先監控來源。 gemini"}, {"topic": "gemini", "topicName": "Gemini", "title": "Gemini 3 — Google DeepMind", "url": "https://deepmind.google/models/gemini/", "published": "3 hours ago", "source": "deepmind.google", "importance": "high", "summary": "Google DeepMind 的 Gemini 頁面提到 Gemini 3 Pro 整合進部分開發者產品與 AI assistant 工作流。", "longxiaNote": "模型代際與產品整合更新要與 Google AI/Gemini API changelog 交叉確認。", "searchText": "gemini 3 — google deepmind deepmind.google google deepmind 的 gemini 頁面提到 gemini 3 pro 整合進部分開發者產品與 ai assistant 工作流。 模型代際與產品整合更新要與 google ai/gemini api changelog 交叉確認。 gemini"}];
+const search = document.querySelector('#search');
+const importance = document.querySelector('#importance');
+const chips = [...document.querySelectorAll('.chip')];
+const cards = [...document.querySelectorAll('#allItems .item')];
+const visibleCount = document.querySelector('#visibleCount');
+const empty = document.querySelector('#empty');
+let activeTopic = 'all';
+function applyFilters() {
+  const q = search.value.trim().toLowerCase();
+  const imp = importance.value;
+  let shown = 0;
+  cards.forEach((card, idx) => {
+    const item = items[idx];
+    const okTopic = activeTopic === 'all' || item.topic === activeTopic;
+    const okImp = imp === 'all' || item.importance === imp;
+    const okQ = !q || item.searchText.includes(q);
+    const show = okTopic && okImp && okQ;
+    card.classList.toggle('hidden', !show);
+    if (show) shown++;
+  });
+  visibleCount.textContent = shown;
+  empty.hidden = shown !== 0;
+}
+chips.forEach(chip => chip.addEventListener('click', () => {
+  activeTopic = chip.dataset.topic;
+  chips.forEach(c => c.classList.toggle('active', c === chip));
+  applyFilters();
+  document.querySelector('#allItems').scrollIntoView({behavior:'smooth', block:'start'});
+}));
+document.querySelectorAll('[data-topic-jump]').forEach(btn => btn.addEventListener('click', () => {
+  const topic = btn.dataset.topicJump;
+  const chip = chips.find(c => c.dataset.topic === topic);
+  if (chip) chip.click();
+}));
+search.addEventListener('input', applyFilters);
+importance.addEventListener('change', applyFilters);
+document.querySelector('#reset').addEventListener('click', () => {
+  search.value = '';
+  importance.value = 'all';
+  activeTopic = 'all';
+  chips.forEach(c => c.classList.toggle('active', c.dataset.topic === 'all'));
+  applyFilters();
+});
+</script></main></body></html>
