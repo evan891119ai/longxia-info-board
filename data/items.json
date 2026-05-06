@@ -1,6 +1,39 @@
 {
-  "updatedAt": "2026-05-05T13:22:00Z",
+  "updatedAt": "2026-05-06T01:02:00Z",
   "items": [
+    {
+      "topic": "anthropic",
+      "title": "Australian government and Anthropic sign MOU for AI safety and research",
+      "url": "https://www.anthropic.com/news/australia-MOU",
+      "published": "5 days ago",
+      "source": "anthropic.com",
+      "importance": "medium",
+      "summary": "Anthropic 與澳洲政府簽署 AI safety research MOU，將與 Australia AI Safety Institute 合作安全與安全性評估，並提供 Economic Index 資料；同時宣布 AUD$3 million 研究合作。",
+      "longxiaNote": "這是 Anthropic 擴大政府安全合作版圖的訊號，可追蹤後續 safety evaluation 與資料中心投資進展。",
+      "foundAt": "2026-05-06T01:00:00Z"
+    },
+    {
+      "topic": "github-copilot",
+      "title": "GitHub Copilot code review will start consuming GitHub Actions minutes on June 1, 2026",
+      "url": "https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/",
+      "published": "1 week ago",
+      "source": "github.blog",
+      "importance": "high",
+      "summary": "GitHub 宣布自 2026-06-01 起，Copilot code review 除 AI Credits 外，私有 repo 的每次 review 也會消耗 GitHub Actions minutes；public repositories 的 Actions minutes 維持免費。",
+      "longxiaNote": "若團隊大量使用 Copilot PR review，需提前檢查 Actions budgets 與私有 repo 成本。",
+      "foundAt": "2026-05-06T01:00:00Z"
+    },
+    {
+      "topic": "linux",
+      "title": "Linux kernel mainline 7.1-rc2 and stable 7.0.3 listed on kernel.org",
+      "url": "https://www.kernel.org/",
+      "published": "2026-05-03 / 2026-04-30",
+      "source": "kernel.org",
+      "importance": "high",
+      "summary": "kernel.org 目前列出 mainline 7.1-rc2（2026-05-03）與 stable 7.0.3（2026-04-30），並提供 tarball、patch、diff、browse 與 changelog 入口。",
+      "longxiaNote": "核心版本追蹤以 kernel.org 為準；若部署環境在 7.0 stable 線上，應留意 7.0.x 後續修補。",
+      "foundAt": "2026-05-06T01:00:00Z"
+    },
     {
       "topic": "openai",
       "title": "OpenAI News",
