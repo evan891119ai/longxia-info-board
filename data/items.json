@@ -1,6 +1,39 @@
 {
-  "updatedAt": "2026-05-08T01:05:50Z",
+  "updatedAt": "2026-05-09T01:02:00Z",
   "items": [
+    {
+      "topic": "github-copilot",
+      "title": "Enterprise-managed plugins in GitHub Copilot CLI are now in public preview",
+      "url": "https://github.blog/changelog/2026-05-06-enterprise-managed-plugins-in-github-copilot-cli-are-now-in-public-preview/",
+      "published": "2026-05-06",
+      "source": "github.blog",
+      "importance": "high",
+      "summary": "GitHub Copilot CLI 進入企業託管 plugins 公開預覽，企業管理員可集中設定 plugin marketplaces、自動安裝指定 plugins，並套用 hooks 與 MCP 設定來標準化團隊工具環境。",
+      "longxiaNote": "若企業內部正在推 Copilot CLI，這能把自訂 agents、skills 與治理設定從個人安裝提升到集中管理。",
+      "foundAt": "2026-05-09T01:02:00Z"
+    },
+    {
+      "topic": "github-copilot",
+      "title": "GitHub Copilot in Visual Studio Code, April releases",
+      "url": "https://github.blog/changelog/2026-05-06-github-copilot-in-visual-studio-code-april-releases/",
+      "published": "2026-05-06",
+      "source": "github.blog",
+      "importance": "high",
+      "summary": "GitHub 彙整 Copilot in VS Code 四月更新：語意搜尋可跨 workspace、repo 與 org 查詢，agent 支援 inline diffs、瀏覽器 tab 分享、讀寫開啟的 terminal，並擴大 BYOK 與管理政策。",
+      "longxiaNote": "這批更新明顯強化 VS Code agent 的上下文、工具權限與企業控管，導入前應同步檢查 terminal 與網域存取政策。",
+      "foundAt": "2026-05-09T01:02:00Z"
+    },
+    {
+      "topic": "gemini",
+      "title": "Gemini Drops highlights notebooks, personal intelligence, and Lyria 3 Pro music creation",
+      "url": "https://gemini.google/gemini-drops/",
+      "published": "2026-05-06",
+      "source": "gemini.google",
+      "importance": "medium",
+      "summary": "Gemini Drops 更新列出 Gemini notebooks、個人化智慧功能與 Lyria 3 Pro 音樂創作等消費端能力，包含用 notebook 保存專案脈絡、連接 Google apps 提供個人化協助，以及建立最長 3 分鐘音樂。",
+      "longxiaNote": "Gemini 正把模型能力包裝成更持續的個人工作區與創作流程，適合觀察是否影響日常知識管理與內容製作習慣。",
+      "foundAt": "2026-05-09T01:02:00Z"
+    },
     {
       "topic": "openai",
       "title": "OpenAI introduces new voice models in the API",
