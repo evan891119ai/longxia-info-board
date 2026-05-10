@@ -5,12 +5,22 @@
 <link>https://evan891119ai.github.io/longxia-info-board/categories/systems-linux.html</link>
 <description>Linux kernel、發行版、安全更新、系統工具與基礎設施。</description>
 <language>zh-Hant</language>
-<lastBuildDate>Sat, 09 May 2026 01:02:00 +0000</lastBuildDate>
+<lastBuildDate>Sun, 10 May 2026 01:03:00 +0000</lastBuildDate>
+<item>
+<title>[系統與 Linux / Linux 相關資訊] SUSE publishes important Linux kernel live patch update SUSE-SU-2026:1776-1</title>
+<link>https://linuxsecurity.com/advisories/suse/suse-2026-1776-1-kernel</link>
+<guid isPermaLink="false">https://linuxsecurity.com/advisories/suse/suse-2026-1776-1-kernel#2026-05-10T01:03:00Z</guid>
+<pubDate>Sun, 10 May 2026 01:03:00 +0000</pubDate>
+<category>系統與 Linux</category>
+<description>LinuxSecurity 摘要 SUSE-SU-2026:1776-1：SUSE Linux Enterprise 15 SP6 kernel live patch 11 修補多個核心安全問題，包含 CVE-2026-31431 與多個 2025 / 2026 CVE，評級為 important。
+
+龍蝦判斷：使用 SUSE SLE 15 SP6 的環境應優先核對 live patch 覆蓋範圍；其他發行版也可追蹤 CVE-2026-31431 是否已修補。</description>
+</item>
 <item>
 <title>[系統與 Linux / Linux 相關資訊] Linux kernel mainline 7.1-rc2 and stable 7.0.3 listed on kernel.org</title>
 <link>https://www.kernel.org/</link>
 <guid isPermaLink="false">https://www.kernel.org/#2026-05-06T01:00:00Z</guid>
-<pubDate>Sat, 09 May 2026 01:02:00 +0000</pubDate>
+<pubDate>Sun, 10 May 2026 01:03:00 +0000</pubDate>
 <category>系統與 Linux</category>
 <description>kernel.org 目前列出 mainline 7.1-rc2（2026-05-03）與 stable 7.0.3（2026-04-30），並提供 tarball、patch、diff、browse 與 changelog 入口。
 

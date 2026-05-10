@@ -5,6 +5,16 @@
 <link>https://evan891119ai.github.io/longxia-info-board/categories/finance-trading.html</link>
 <description>量化交易、金融市場模型、風控與交易系統研究。</description>
 <language>zh-Hant</language>
-<lastBuildDate>Sat, 09 May 2026 01:02:00 +0000</lastBuildDate>
+<lastBuildDate>Sun, 10 May 2026 01:03:00 +0000</lastBuildDate>
+<item>
+<title>[金融交易 / 金融交易深度學習模型] Learning Temporal Patterns in Financial Time Series: Quantum LSTM and Quantum Reservoir Computing</title>
+<link>https://arxiv.org/abs/2605.02656</link>
+<guid isPermaLink="false">https://arxiv.org/abs/2605.02656#2026-05-10T01:03:00Z</guid>
+<pubDate>Sun, 10 May 2026 01:03:00 +0000</pubDate>
+<category>金融交易</category>
+<description>arXiv 論文比較 Quantum LSTM、Quantum Reservoir Computing 與傳統 LSTM / reservoir computing 在金融時間序列預測上的表現，指出適當 lag selection 與 amplitude encoding 可在多變量相關輸入下帶來小幅優勢。
+
+龍蝦判斷：這仍屬研究性質，適合追蹤量子混合模型對多變量市場資料的可能優勢，但離交易實盤還需要嚴格回測與成本檢驗。</description>
+</item>
 </channel>
 </rss>

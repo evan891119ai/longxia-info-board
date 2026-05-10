@@ -1,6 +1,94 @@
 {
-  "updatedAt": "2026-05-09T01:02:00Z",
+  "updatedAt": "2026-05-10T01:03:00Z",
   "items": [
+    {
+      "topic": "openai",
+      "title": "Running Codex safely at OpenAI",
+      "url": "https://openai.com/index/running-codex-safely/",
+      "published": "2026-05-08",
+      "source": "openai.com",
+      "importance": "high",
+      "summary": "OpenAI 說明內部部署 Codex coding agent 的安全做法，包含 sandbox、approval policy、受管網路政策、企業登入與 agent-native telemetry，讓低風險開發動作順暢、高風險操作需審核。",
+      "longxiaNote": "導入 coding agent 時可把這篇當作治理清單：權限邊界、網路出口、憑證、審批與稽核紀錄要一起設計。",
+      "foundAt": "2026-05-10T01:03:00Z"
+    },
+    {
+      "topic": "openai",
+      "title": "GPT-5.5 Instant: smarter, clearer, and more personalized",
+      "url": "https://openai.com/index/gpt-5-5-instant/",
+      "published": "2026-05-05",
+      "source": "openai.com",
+      "importance": "high",
+      "summary": "OpenAI 將 ChatGPT 預設 Instant 模型升級為 GPT-5.5 Instant，主打更高事實性、更精簡回答、影像與 STEM 能力改善，並推出 memory sources 讓使用者查看與管理個人化來源。",
+      "longxiaNote": "日常使用者會直接感受到預設模型變化；企業與產品整合也要留意 chat-latest 與舊 Instant 退場時程。",
+      "foundAt": "2026-05-10T01:03:00Z"
+    },
+    {
+      "topic": "openai",
+      "title": "Introducing Trusted Contact in ChatGPT",
+      "url": "https://openai.com/index/introducing-trusted-contact-in-chatgpt/",
+      "published": "2026-05-07",
+      "source": "openai.com",
+      "importance": "medium",
+      "summary": "OpenAI 開始推出 ChatGPT Trusted Contact，成人可選擇加入可信任聯絡人；在偵測到嚴重自傷風險並經訓練人員審查後，系統可協助通知該聯絡人。",
+      "longxiaNote": "這是 AI 產品把危機支援延伸到真實人際網路的案例，設計上需同時關注自主權、隱私與誤報風險。",
+      "foundAt": "2026-05-10T01:03:00Z"
+    },
+    {
+      "topic": "ai-agents",
+      "title": "Anthropic releases finance agent templates and Microsoft 365 add-ins for Claude",
+      "url": "https://www.anthropic.com/news/finance-agents",
+      "published": "2026-05-05",
+      "source": "anthropic.com",
+      "importance": "high",
+      "summary": "Anthropic 發布 10 個金融服務 agent templates，涵蓋 pitchbook、KYC、月結、估值審查等工作，可作為 Claude Cowork / Claude Code plugin 或 Claude Managed Agents cookbook 使用，並強化 Excel、PowerPoint、Word、Outlook add-ins。",
+      "longxiaNote": "金融 agent 正從 demo 走向可部署模板，重點會落在資料連接、人工審批、權限控管與完整 audit log。",
+      "foundAt": "2026-05-10T01:03:00Z"
+    },
+    {
+      "topic": "github-copilot",
+      "title": "Secret scanning with GitHub MCP Server is now generally available",
+      "url": "https://github.blog/changelog/2026-05-05-secret-scanning-with-github-mcp-server-is-now-generally-available/",
+      "published": "2026-05-05",
+      "source": "github.blog",
+      "importance": "high",
+      "summary": "GitHub MCP Server 的 secret scanning 正式 GA，AI coding agent 或 IDE 可在 commit / PR 前掃描暴露密鑰，且會遵循既有 push protection customization 與 bypass 行為。",
+      "longxiaNote": "把 secret scanning 放進 agent 工作流是實用防線；團隊應確認 GitHub Secret Protection 與 MCP server 設定已接上。",
+      "foundAt": "2026-05-10T01:03:00Z"
+    },
+    {
+      "topic": "github-copilot",
+      "title": "Claude Sonnet 4 deprecated across GitHub Copilot experiences",
+      "url": "https://github.blog/changelog/2026-05-07-claude-sonnet-4-deprecated/",
+      "published": "2026-05-07",
+      "source": "github.blog",
+      "importance": "medium",
+      "summary": "GitHub 宣布 Claude Sonnet 4 已於 2026-05-06 在 Copilot Chat、inline edits、ask、agent modes 與 code completions 等體驗中 deprecated，建議改用 Claude Sonnet 4.6。",
+      "longxiaNote": "若 workflow 或企業模型政策仍指定 Sonnet 4，需盡快改成支援模型並確認管理員已開啟替代模型。",
+      "foundAt": "2026-05-10T01:03:00Z"
+    },
+    {
+      "topic": "deep-learning-trading",
+      "title": "Learning Temporal Patterns in Financial Time Series: Quantum LSTM and Quantum Reservoir Computing",
+      "url": "https://arxiv.org/abs/2605.02656",
+      "published": "2026-05-04",
+      "source": "arxiv.org",
+      "importance": "medium",
+      "summary": "arXiv 論文比較 Quantum LSTM、Quantum Reservoir Computing 與傳統 LSTM / reservoir computing 在金融時間序列預測上的表現，指出適當 lag selection 與 amplitude encoding 可在多變量相關輸入下帶來小幅優勢。",
+      "longxiaNote": "這仍屬研究性質，適合追蹤量子混合模型對多變量市場資料的可能優勢，但離交易實盤還需要嚴格回測與成本檢驗。",
+      "foundAt": "2026-05-10T01:03:00Z"
+    },
+    {
+      "topic": "linux",
+      "title": "SUSE publishes important Linux kernel live patch update SUSE-SU-2026:1776-1",
+      "url": "https://linuxsecurity.com/advisories/suse/suse-2026-1776-1-kernel",
+      "published": "2026-05-08",
+      "source": "linuxsecurity.com",
+      "importance": "high",
+      "summary": "LinuxSecurity 摘要 SUSE-SU-2026:1776-1：SUSE Linux Enterprise 15 SP6 kernel live patch 11 修補多個核心安全問題，包含 CVE-2026-31431 與多個 2025 / 2026 CVE，評級為 important。",
+      "longxiaNote": "使用 SUSE SLE 15 SP6 的環境應優先核對 live patch 覆蓋範圍；其他發行版也可追蹤 CVE-2026-31431 是否已修補。",
+      "foundAt": "2026-05-10T01:03:00Z"
+    },
     {
       "topic": "github-copilot",
       "title": "Enterprise-managed plugins in GitHub Copilot CLI are now in public preview",
