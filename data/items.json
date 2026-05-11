@@ -1,6 +1,72 @@
 {
-  "updatedAt": "2026-05-10T01:03:00Z",
+  "updatedAt": "2026-05-11T01:03:00Z",
   "items": [
+    {
+      "topic": "ai-agents",
+      "title": "NVIDIA and ServiceNow partner on Project Arc autonomous enterprise agents",
+      "url": "https://blogs.nvidia.com/blog/servicenow-autonomous-ai-agents-enterprises/",
+      "published": "2026-05-07",
+      "source": "blogs.nvidia.com",
+      "importance": "high",
+      "summary": "NVIDIA 與 ServiceNow 擴大合作，推出 Project Arc：面向知識工作者的長時間自主桌面 agent，結合 ServiceNow Action Fabric、AI Control Tower 與 NVIDIA OpenShell，在可稽核、受政策約束的環境中操作本機檔案、終端與應用程式。",
+      "longxiaNote": "企業級 autonomous agent 的重點已從能不能做事，轉向 runtime sandbox、工具權限、稽核與 workflow governance 是否完整。",
+      "foundAt": "2026-05-11T01:03:00Z"
+    },
+    {
+      "topic": "anthropic",
+      "title": "Anthropic raises Claude limits and signs SpaceX compute capacity deal",
+      "url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "published": "2026-05-07",
+      "source": "anthropic.com",
+      "importance": "high",
+      "summary": "Anthropic 宣布提高 Claude Code 與 Claude API 用量限制：Pro、Max、Team 與 seat-based Enterprise 的 Claude Code 五小時限制翻倍，Pro/Max 移除尖峰時段降額，並大幅提高 Claude Opus API rate limits；同時與 SpaceX 簽約取得 Colossus 1 資料中心逾 300MW、約 22 萬顆 NVIDIA GPU 容量。",
+      "longxiaNote": "模型能力之外，供給端 compute capacity 正直接影響開發者體驗與 API 可用性，值得追蹤各家容量策略。",
+      "foundAt": "2026-05-11T01:03:00Z"
+    },
+    {
+      "topic": "github-copilot",
+      "title": "Copilot code review comment types now in usage metrics API",
+      "url": "https://github.blog/changelog/2026-05-08-copilot-code-review-comment-types-now-in-usage-metrics-api/",
+      "published": "2026-05-08",
+      "source": "github.blog",
+      "importance": "medium",
+      "summary": "GitHub Copilot usage metrics API 新增 copilot_suggestions_by_comment_type，可在 enterprise 與 organization 報表中按 comment type 統計 Copilot code review 建議數與被採用數，支援單日與 28 天 rolling window。",
+      "longxiaNote": "管理者可以開始衡量 Copilot code review 到底抓到哪些類型問題，以及哪些建議真的被工程師採用。",
+      "foundAt": "2026-05-11T01:03:00Z"
+    },
+    {
+      "topic": "github-copilot",
+      "title": "More flexible secrets and variables for Copilot cloud agent",
+      "url": "https://github.blog/changelog/2026-05-08-more-flexible-secrets-and-variables-for-copilot-cloud-agent/",
+      "published": "2026-05-08",
+      "source": "github.blog",
+      "importance": "high",
+      "summary": "GitHub Copilot cloud agent 新增專用的 Agents secrets 與 variables，可在組織層級集中設定並分享給指定 repositories，也可在 repo 設定中與 Actions 分開管理，方便大規模配置私有資源或 MCP server。",
+      "longxiaNote": "這讓 cloud agent 更接近企業可治理部署；但同時要嚴格控管 secret scope、repository access 與 MCP 連線風險。",
+      "foundAt": "2026-05-11T01:03:00Z"
+    },
+    {
+      "topic": "linux",
+      "title": "AlmaLinux ships patched kernels for Dirty Frag Linux vulnerabilities",
+      "url": "https://almalinux.org/blog/2026-05-07-dirty-frag/",
+      "published": "2026-05-08",
+      "source": "almalinux.org",
+      "importance": "high",
+      "summary": "AlmaLinux 說明 Dirty Frag 影響 Linux kernel IPsec ESP 與 rxrpc fast paths，涉及 CVE-2026-43284 與 CVE-2026-43500，公開 exploit 已出現；官方已將修補 kernel 推到 production repositories。",
+      "longxiaNote": "多租戶主機、CI runner、container build farm 等可被非信任使用者登入的環境應優先套用 kernel 更新並重開機。",
+      "foundAt": "2026-05-11T01:03:00Z"
+    },
+    {
+      "topic": "deep-learning-trading",
+      "title": "A Meta Reinforcement Learning Approach to Goals-Based Wealth Management",
+      "url": "https://arxiv.org/abs/2605.02300",
+      "published": "2026-05-04",
+      "source": "arxiv.org",
+      "importance": "medium",
+      "summary": "arXiv 論文提出 MetaRL，用大量 goals-based wealth management 問題預訓練後，在新投資者情境中可於幾百分之一秒產生近似最適的動態投資組合與目標履行策略，平均達動態規劃最適效用的 97.8%。",
+      "longxiaNote": "適合關注財富管理與投資決策中的 meta-RL 應用，但實務導入仍需檢查資料假設、交易成本與風險限制。",
+      "foundAt": "2026-05-11T01:03:00Z"
+    },
     {
       "topic": "openai",
       "title": "Running Codex safely at OpenAI",

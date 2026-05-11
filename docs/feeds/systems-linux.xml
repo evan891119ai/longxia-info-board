@@ -5,12 +5,22 @@
 <link>https://evan891119ai.github.io/longxia-info-board/categories/systems-linux.html</link>
 <description>Linux kernel、發行版、安全更新、系統工具與基礎設施。</description>
 <language>zh-Hant</language>
-<lastBuildDate>Sun, 10 May 2026 01:03:00 +0000</lastBuildDate>
+<lastBuildDate>Mon, 11 May 2026 01:03:00 +0000</lastBuildDate>
+<item>
+<title>[系統與 Linux / Linux 相關資訊] AlmaLinux ships patched kernels for Dirty Frag Linux vulnerabilities</title>
+<link>https://almalinux.org/blog/2026-05-07-dirty-frag/</link>
+<guid isPermaLink="false">https://almalinux.org/blog/2026-05-07-dirty-frag/#2026-05-11T01:03:00Z</guid>
+<pubDate>Mon, 11 May 2026 01:03:00 +0000</pubDate>
+<category>系統與 Linux</category>
+<description>AlmaLinux 說明 Dirty Frag 影響 Linux kernel IPsec ESP 與 rxrpc fast paths，涉及 CVE-2026-43284 與 CVE-2026-43500，公開 exploit 已出現；官方已將修補 kernel 推到 production repositories。
+
+龍蝦判斷：多租戶主機、CI runner、container build farm 等可被非信任使用者登入的環境應優先套用 kernel 更新並重開機。</description>
+</item>
 <item>
 <title>[系統與 Linux / Linux 相關資訊] SUSE publishes important Linux kernel live patch update SUSE-SU-2026:1776-1</title>
 <link>https://linuxsecurity.com/advisories/suse/suse-2026-1776-1-kernel</link>
 <guid isPermaLink="false">https://linuxsecurity.com/advisories/suse/suse-2026-1776-1-kernel#2026-05-10T01:03:00Z</guid>
-<pubDate>Sun, 10 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Mon, 11 May 2026 01:03:00 +0000</pubDate>
 <category>系統與 Linux</category>
 <description>LinuxSecurity 摘要 SUSE-SU-2026:1776-1：SUSE Linux Enterprise 15 SP6 kernel live patch 11 修補多個核心安全問題，包含 CVE-2026-31431 與多個 2025 / 2026 CVE，評級為 important。
 
@@ -20,7 +30,7 @@
 <title>[系統與 Linux / Linux 相關資訊] Linux kernel mainline 7.1-rc2 and stable 7.0.3 listed on kernel.org</title>
 <link>https://www.kernel.org/</link>
 <guid isPermaLink="false">https://www.kernel.org/#2026-05-06T01:00:00Z</guid>
-<pubDate>Sun, 10 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Mon, 11 May 2026 01:03:00 +0000</pubDate>
 <category>系統與 Linux</category>
 <description>kernel.org 目前列出 mainline 7.1-rc2（2026-05-03）與 stable 7.0.3（2026-04-30），並提供 tarball、patch、diff、browse 與 changelog 入口。
 
