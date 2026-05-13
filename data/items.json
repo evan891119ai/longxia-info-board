@@ -1,6 +1,50 @@
 {
-  "updatedAt": "2026-05-11T01:03:00Z",
+  "updatedAt": "2026-05-13T01:02:00Z",
   "items": [
+    {
+      "topic": "openai",
+      "title": "OpenAI launches the OpenAI Deployment Company",
+      "url": "https://openai.com/index/openai-launches-the-deployment-company/",
+      "published": "2026-05-11",
+      "source": "openai.com",
+      "importance": "high",
+      "summary": "OpenAI 宣布成立 OpenAI Deployment Company，主打把 Forward Deployed Engineers 嵌入企業，協助重設關鍵 workflow 並部署可日常依賴的 AI 系統；同時同意收購 Tomoro，帶入約 150 名部署與工程人員，並以超過 40 億美元初始投資擴大企業導入能力。",
+      "longxiaNote": "企業 AI 競爭正在從模型 API 延伸到落地服務與 change management；大型客戶會更重視端到端導入能力。",
+      "foundAt": "2026-05-13T01:02:00Z"
+    },
+    {
+      "topic": "ai-agents",
+      "title": "SAP unveils Autonomous Enterprise and SAP Business AI Platform",
+      "url": "https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise/",
+      "published": "2026-05-12",
+      "source": "news.sap.com",
+      "importance": "high",
+      "summary": "SAP 在 Sapphire 2026 發表 Autonomous Enterprise，將 SAP Business Technology Platform、Business Data Cloud 與 Business AI 整合成 SAP Business AI Platform，並以 Knowledge Graph、Joule Studio 與 SAP Autonomous Suite 支援可治理的企業 agents 與端到端流程自動化。",
+      "longxiaNote": "ERP 廠商的 agent 化重點是流程上下文、資料治理與合規，不只是聊天介面；可觀察 SAP 生態系如何把 agent 綁進核心營運。",
+      "foundAt": "2026-05-13T01:02:00Z"
+    },
+    {
+      "topic": "gemini",
+      "title": "Gemini API announces May 2026 Interactions API breaking-change migration",
+      "url": "https://ai.google.dev/gemini-api/docs/interactions-breaking-changes-may-2026",
+      "published": "2026-05-08",
+      "source": "ai.google.dev",
+      "importance": "high",
+      "summary": "Google AI for Developers 發布 Gemini API Interactions API 破壞性變更遷移指南：新 schema 將在 5 月 26 日後成為預設，開發者可暫時用 Api-Revision: 2026-05-07 opt out，直到 6 月 8 日移除 legacy schema。",
+      "longxiaNote": "使用 Gemini Interactions API 的服務應盡快加測 schema 相容性，避免月底預設切換造成 production request 失敗。",
+      "foundAt": "2026-05-13T01:02:00Z"
+    },
+    {
+      "topic": "linux",
+      "title": "Microsoft reports active Dirty Frag Linux exploitation risk",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/08/active-attack-dirty-frag-linux-vulnerability-expands-post-compromise-risk/",
+      "published": "2026-05-08",
+      "source": "microsoft.com/security",
+      "importance": "high",
+      "summary": "Microsoft Security 說明 Dirty Frag Linux 本地提權漏洞已出現公開 PoC 與主動攻擊風險，影響 esp4、esp6 與 rxrpc 等 kernel networking / memory-fragment 路徑，可能在 SSH、web shell、container 或低權限帳號初始入侵後被用來取得 root。",
+      "longxiaNote": "這是 post-compromise 風險放大器；有多租戶、容器或可登入工作負載的 Linux 主機應優先修 kernel 並重啟。",
+      "foundAt": "2026-05-13T01:02:00Z"
+    },
     {
       "topic": "ai-agents",
       "title": "NVIDIA and ServiceNow partner on Project Arc autonomous enterprise agents",
