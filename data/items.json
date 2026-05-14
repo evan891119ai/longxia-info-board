@@ -1,6 +1,72 @@
 {
-  "updatedAt": "2026-05-13T01:02:00Z",
+  "updatedAt": "2026-05-14T01:03:00Z",
   "items": [
+    {
+      "topic": "openai",
+      "title": "OpenAI shares lessons from Parameter Golf ML challenge",
+      "url": "https://openai.com/index/what-parameter-golf-taught-us/",
+      "published": "2026-05-12",
+      "source": "openai.com",
+      "importance": "medium",
+      "summary": "OpenAI 回顧 Parameter Golf 競賽：參賽者需在 16 MB artifact、8×H100 十分鐘訓練預算與固定 FineWeb 評測下最小化 held-out loss；八週內吸引超過 1,000 名參與者、2,000 多次提交，也觀察到 AI coding agents 大幅降低實驗成本並改變競賽節奏。",
+      "longxiaNote": "小型、可驗證、限制明確的 ML 挑戰可同時推進研究社群與人才發掘；agent 會讓實驗迭代更快，但也增加審查與歸因難度。",
+      "foundAt": "2026-05-14T01:03:00Z"
+    },
+    {
+      "topic": "ai-agents",
+      "title": "SAP and NVIDIA detail secure runtime direction for enterprise AI agents",
+      "url": "https://news.sap.com/2026/05/secure-ai-agents-how-sap-and-nvidia-co-define-enterprise-grade-agent-execution/",
+      "published": "2026-05-13",
+      "source": "news.sap.com",
+      "importance": "high",
+      "summary": "SAP 說明與 NVIDIA 在 SAP Business AI Platform 上共同塑造企業級 agent execution layer，重點包含讓 agents 在 SAP 流程內執行任務而不繞過治理、對齊 IAM 與合規模型、保留可稽核 action trail，並將安全與治理內建於執行模型。",
+      "longxiaNote": "企業 agent 進入 production 的核心不是「能自動做多少事」，而是 runtime、權限邊界、稽核與身份治理是否可被風控接受。",
+      "foundAt": "2026-05-14T01:03:00Z"
+    },
+    {
+      "topic": "github-copilot",
+      "title": "GitHub adds REST API to start Copilot cloud agent tasks",
+      "url": "https://github.blog/changelog/2026-05-13-start-copilot-cloud-agent-tasks-via-the-rest-api/",
+      "published": "2026-05-13",
+      "source": "github.blog",
+      "importance": "high",
+      "summary": "GitHub Copilot Business 與 Enterprise 使用者可在 public preview 透過新的 Agent tasks REST API 程式化啟動 Copilot cloud agent 任務，讓 agent 在背景開發環境中修改、驗證程式並開 PR；API 也支援追蹤進度，GitHub App token 與 Pro/Pro+ 支援將稍後推出。",
+      "longxiaNote": "Copilot cloud agent 從 UI 操作走向可被內部平台與批次自動化編排，適合 migration、repo bootstrap 與週期性 release 工作流，但要先設計好權限與審查閘門。",
+      "foundAt": "2026-05-14T01:03:00Z"
+    },
+    {
+      "topic": "gemini",
+      "title": "Gemini Enterprise adds GitLab data stores in preview and updates EU model availability",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
+      "published": "2026-05-13",
+      "source": "docs.cloud.google.com",
+      "importance": "medium",
+      "summary": "Gemini Enterprise release notes 顯示，5 月 12 日新增 GitLab data stores Public Preview，可連接 GitLab 資料來源；5 月 13 日另更正 Gemini 3.1 Pro 與 3 Flash 在 EU region 的可用狀態為 coming soon，而非已可用。",
+      "longxiaNote": "導入 Gemini Enterprise 時要分開追蹤資料連接器成熟度與模型地區可用性；EU data residency / region planning 不宜只看先前公告。",
+      "foundAt": "2026-05-14T01:03:00Z"
+    },
+    {
+      "topic": "deep-learning-trading",
+      "title": "Neural parameterization learns time-varying Markov dynamics in financial time series",
+      "url": "https://arxiv.org/abs/2605.04690",
+      "published": "2026-05-06",
+      "source": "arxiv.org",
+      "importance": "medium",
+      "summary": "arXiv 論文提出以神經網路作為參數化引擎，輸出明確、隨時間變化的 Markov transition matrices，用於建模金融時間序列的非平穩 regime shift；作者強調在保留 stochastic operator 可解釋性的同時，利用 row entropy 與 Chapman-Kolmogorov diagnostics 觀察波動與記憶假設失效區間。",
+      "longxiaNote": "這類「深度學習 + 顯式隨機算子」方法適合做 regime diagnostics；若用於交易，仍需額外驗證交易成本、樣本外穩定性與風控限制。",
+      "foundAt": "2026-05-14T01:03:00Z"
+    },
+    {
+      "topic": "linux",
+      "title": "Ubuntu publishes USN-8266-1 Linux kernel security updates",
+      "url": "https://ubuntu.com/security/notices/USN-8266-1",
+      "published": "2026-05-11",
+      "source": "ubuntu.com/security",
+      "importance": "high",
+      "summary": "Ubuntu 發布 USN-8266-1，修補多個 Linux kernel 安全問題，影響 generic kernel 以及 AWS、Azure、GCP、Oracle、KVM、FIPS、HWE 等多種 kernel package；公告指出 AppArmor LSM 等漏洞可能讓本地低權限攻擊者造成拒絕服務或進一步影響系統。",
+      "longxiaNote": "Ubuntu fleet 管理者應確認對應雲端與 HWE kernel 是否已套用更新並安排重開機，尤其是多租戶或可執行不受信任 workload 的主機。",
+      "foundAt": "2026-05-14T01:03:00Z"
+    },
     {
       "topic": "openai",
       "title": "OpenAI launches the OpenAI Deployment Company",
