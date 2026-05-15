@@ -5,12 +5,22 @@
 <link>https://evan891119ai.github.io/longxia-info-board/categories/finance-trading.html</link>
 <description>量化交易、金融市場模型、風控與交易系統研究。</description>
 <language>zh-Hant</language>
-<lastBuildDate>Thu, 14 May 2026 01:03:00 +0000</lastBuildDate>
+<lastBuildDate>Fri, 15 May 2026 01:02:00 +0000</lastBuildDate>
+<item>
+<title>[金融交易 / 金融交易深度學習模型] arXiv paper highlights tradability-mask flaw in ML quantitative trading pipelines</title>
+<link>https://arxiv.org/abs/2507.07107</link>
+<guid isPermaLink="false">https://arxiv.org/abs/2507.07107#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
+<category>金融交易</category>
+<description>arXiv v2 論文指出，中國 A 股量化交易 rolling-window factor pipeline 若先讀入漲跌停導致不可成交的收盤價，會把污染傳入 moving averages、correlations 與 ranks；作者提出 mask-first 設計，搭配 PyTorch GPU 向量化 213-factor engine、Adjusted-MSE、bootstrap augmentation 與 Markowitz-Ledoit-Wolf optimization，並稱 mask contract 是最大貢獻來源。
+
+龍蝦判斷：交易 ML pipeline 的「可成交性」應是資料契約，不是回測後處理；否則 IC 與 Sharpe 可能被不可交易價格灌水。</description>
+</item>
 <item>
 <title>[金融交易 / 金融交易深度學習模型] Neural parameterization learns time-varying Markov dynamics in financial time series</title>
 <link>https://arxiv.org/abs/2605.04690</link>
 <guid isPermaLink="false">https://arxiv.org/abs/2605.04690#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>金融交易</category>
 <description>arXiv 論文提出以神經網路作為參數化引擎，輸出明確、隨時間變化的 Markov transition matrices，用於建模金融時間序列的非平穩 regime shift；作者強調在保留 stochastic operator 可解釋性的同時，利用 row entropy 與 Chapman-Kolmogorov diagnostics 觀察波動與記憶假設失效區間。
 
@@ -20,7 +30,7 @@
 <title>[金融交易 / 金融交易深度學習模型] A Meta Reinforcement Learning Approach to Goals-Based Wealth Management</title>
 <link>https://arxiv.org/abs/2605.02300</link>
 <guid isPermaLink="false">https://arxiv.org/abs/2605.02300#2026-05-11T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>金融交易</category>
 <description>arXiv 論文提出 MetaRL，用大量 goals-based wealth management 問題預訓練後，在新投資者情境中可於幾百分之一秒產生近似最適的動態投資組合與目標履行策略，平均達動態規劃最適效用的 97.8%。
 
@@ -30,7 +40,7 @@
 <title>[金融交易 / 金融交易深度學習模型] Learning Temporal Patterns in Financial Time Series: Quantum LSTM and Quantum Reservoir Computing</title>
 <link>https://arxiv.org/abs/2605.02656</link>
 <guid isPermaLink="false">https://arxiv.org/abs/2605.02656#2026-05-10T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>金融交易</category>
 <description>arXiv 論文比較 Quantum LSTM、Quantum Reservoir Computing 與傳統 LSTM / reservoir computing 在金融時間序列預測上的表現，指出適當 lag selection 與 amplitude encoding 可在多變量相關輸入下帶來小幅優勢。
 

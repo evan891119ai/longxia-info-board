@@ -1,6 +1,105 @@
 {
-  "updatedAt": "2026-05-14T01:03:00Z",
+  "updatedAt": "2026-05-15T01:02:00Z",
   "items": [
+    {
+      "topic": "openai",
+      "title": "OpenAI brings Codex into the ChatGPT mobile app",
+      "url": "https://openai.com/index/work-with-codex-from-anywhere/",
+      "published": "2026-05-14",
+      "source": "openai.com",
+      "importance": "high",
+      "summary": "OpenAI 宣布 Codex 已進入 ChatGPT mobile app，使用者可從手機連回執行 Codex 的電腦、devbox 或遠端環境，查看 active threads、回覆問題、核准命令、追蹤 terminal output、screenshots、diffs 與 test results；OpenAI 也提到 Codex 每週已有超過 400 萬人使用。",
+      "longxiaNote": "coding agent 正從單機 CLI 走向跨裝置協作；長時間任務的關鍵會是即時審核、權限核准與狀態同步。",
+      "foundAt": "2026-05-15T01:02:00Z"
+    },
+    {
+      "topic": "openai",
+      "title": "OpenAI details Windows sandbox work for Codex",
+      "url": "https://openai.com/index/building-codex-windows-sandbox/",
+      "published": "2026-05-13",
+      "source": "openai.com",
+      "importance": "medium",
+      "summary": "OpenAI 說明 Codex for Windows sandbox 的設計挑戰：Windows 使用者過去常在頻繁核准命令與 Full Access 之間取捨；Codex 預設希望允許讀取、多數寫入限制在 workspace、並限制網路存取，因此需要由作業系統強制的沙箱邊界來約束整個 process tree。",
+      "longxiaNote": "在 Windows 上落地 coding agent，安全性不只靠 UI approval，還需要可驗證的 OS-level isolation。",
+      "foundAt": "2026-05-15T01:02:00Z"
+    },
+    {
+      "topic": "ai-agents",
+      "title": "Arm and Red Hat outline production-ready stack for agentic AI datacenters",
+      "url": "https://newsroom.arm.com/blog/agentic-ai-infrastructure-arm-agi-cpu-red-hat",
+      "published": "2026-05-11",
+      "source": "newsroom.arm.com",
+      "importance": "medium",
+      "summary": "Arm 表示正與 Red Hat 擴大合作，將 Arm AGI CPU 與 RHEL、OpenShift、OpenShift Virtualization 等 enterprise stack 結合，提供可在 cloud 與 on-prem datacenters 部署 AI agents、microservices 與資料管線的混合雲基礎；方案預計 2026 年第四季可用。",
+      "longxiaNote": "agentic AI 的基礎設施競爭正在往「CPU/OS/Kubernetes/VM 一體化」推進，適合觀察企業如何把 agents 放進既有平台工程。",
+      "foundAt": "2026-05-15T01:02:00Z"
+    },
+    {
+      "topic": "openclaw",
+      "title": "OpenClaw v2026.5.14-beta.1 adds auditable subagent delivery and status reaction updates",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.14-beta.1",
+      "published": "2026-05-14",
+      "source": "github.com/openclaw",
+      "importance": "medium",
+      "summary": "OpenClaw v2026.5.14-beta.1 pre-release notes 包含多項 agent/runtime 與維運更新：subagents 的 sessions_spawn task 會出現在 child session 第一則可見訊息以提升可稽核性、WhatsApp 狀態反應補上 queued/thinking/tool/done/error lifecycle，並新增啟動 trace attribution、UI text size、release validation lanes 與維護者 tooling。",
+      "longxiaNote": "這些變更偏向 production 可觀測性與審計性；若大量使用 subagents 或多 channel，自動化紀錄會更容易追蹤。",
+      "foundAt": "2026-05-15T01:02:00Z"
+    },
+    {
+      "topic": "anthropic",
+      "title": "Anthropic and Gates Foundation announce $200M beneficial deployments partnership",
+      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "published": "2026-05-14",
+      "source": "anthropic.com",
+      "importance": "medium",
+      "summary": "Anthropic 宣布與 Gates Foundation 合作，未來四年投入 2 億美元的 grant funding、Claude usage credits 與技術支援，聚焦 global health、life sciences、education、economic mobility；計畫包括公共衛生資料、評測基準、healthcare connectors 與協助低中收入國家改善健康決策。",
+      "longxiaNote": "大型模型公司的公益部署開始制度化，值得看其 evaluation、資料治理與實際成效是否能被外部驗證。",
+      "foundAt": "2026-05-15T01:02:00Z"
+    },
+    {
+      "topic": "github-copilot",
+      "title": "GitHub Copilot app enters technical preview as desktop agentic development workspace",
+      "url": "https://github.blog/changelog/2026-05-14-github-copilot-app-is-now-available-in-technical-preview/",
+      "published": "2026-05-14",
+      "source": "github.blog",
+      "importance": "high",
+      "summary": "GitHub Copilot app 進入 technical preview，提供 GitHub-native desktop experience，可從 issue、pull request、prompt 或既有 session 啟動 agentic development，讓每個 session 擁有獨立 branch、檔案、對話與 task state，並在同一處 review plan/diff、執行驗證、開 PR 與使用 Agent Merge 處理後續 review。",
+      "longxiaNote": "GitHub 正把 Copilot cloud agent 包成完整工作台；團隊採用前應先規劃 session 隔離、PR review 與 merge 條件。",
+      "foundAt": "2026-05-15T01:02:00Z"
+    },
+    {
+      "topic": "gemini",
+      "title": "Gemini API pricing page flags Gemini 2.0 Flash-Lite shutdown on June 1",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "published": "2026-05-08",
+      "source": "ai.google.dev",
+      "importance": "medium",
+      "summary": "Google AI for Developers 的 Gemini API pricing 文件顯示，Gemini 2.0 Flash-Lite 已 deprecated，並將於 2026 年 6 月 1 日關閉；文件同頁也列出 Imagen 4 相關模型與 Gemini API 計價資訊。",
+      "longxiaNote": "仍使用 Gemini 2.0 Flash-Lite 的服務要在 6 月前完成模型遷移與成本重估，避免 shutdown 造成請求失敗。",
+      "foundAt": "2026-05-15T01:02:00Z"
+    },
+    {
+      "topic": "deep-learning-trading",
+      "title": "arXiv paper highlights tradability-mask flaw in ML quantitative trading pipelines",
+      "url": "https://arxiv.org/abs/2507.07107",
+      "published": "2026-05-09",
+      "source": "arxiv.org",
+      "importance": "medium",
+      "summary": "arXiv v2 論文指出，中國 A 股量化交易 rolling-window factor pipeline 若先讀入漲跌停導致不可成交的收盤價，會把污染傳入 moving averages、correlations 與 ranks；作者提出 mask-first 設計，搭配 PyTorch GPU 向量化 213-factor engine、Adjusted-MSE、bootstrap augmentation 與 Markowitz-Ledoit-Wolf optimization，並稱 mask contract 是最大貢獻來源。",
+      "longxiaNote": "交易 ML pipeline 的「可成交性」應是資料契約，不是回測後處理；否則 IC 與 Sharpe 可能被不可交易價格灌水。",
+      "foundAt": "2026-05-15T01:02:00Z"
+    },
+    {
+      "topic": "linux",
+      "title": "AlmaLinux publishes testing kernels for Fragnesia CVE-2026-46300",
+      "url": "https://almalinux.org/blog/2026-05-13-fragnesia-cve-2026-46300/",
+      "published": "2026-05-14",
+      "source": "almalinux.org",
+      "importance": "high",
+      "summary": "AlmaLinux 更新 Fragnesia（CVE-2026-46300）公告，表示 almalinux-testing 已提供重新整理後的 patched kernels，涵蓋 AL8、AL9、AL10；此本地 root 漏洞位於與 Dirty Frag 類似的 IPsec ESP / rxrpc 相關攻擊面，公開 PoC 已存在，官方建議已安裝早期 test build 的使用者重新更新並 reboot。",
+      "longxiaNote": "多租戶、CI runner、container build farm 或允許不受信任 shell 的 AlmaLinux 主機應優先評估 testing kernel 與正式 rollout 時程。",
+      "foundAt": "2026-05-15T01:02:00Z"
+    },
     {
       "topic": "openai",
       "title": "OpenAI shares lessons from Parameter Golf ML challenge",

@@ -5,12 +5,82 @@
 <link>https://evan891119ai.github.io/longxia-info-board/categories/ai.html</link>
 <description>AI 模型、agents、開發工具與平台更新。</description>
 <language>zh-Hant</language>
-<lastBuildDate>Thu, 14 May 2026 01:03:00 +0000</lastBuildDate>
+<lastBuildDate>Fri, 15 May 2026 01:02:00 +0000</lastBuildDate>
+<item>
+<title>[AI / OpenAI] OpenAI brings Codex into the ChatGPT mobile app</title>
+<link>https://openai.com/index/work-with-codex-from-anywhere/</link>
+<guid isPermaLink="false">https://openai.com/index/work-with-codex-from-anywhere/#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
+<category>AI</category>
+<description>OpenAI 宣布 Codex 已進入 ChatGPT mobile app，使用者可從手機連回執行 Codex 的電腦、devbox 或遠端環境，查看 active threads、回覆問題、核准命令、追蹤 terminal output、screenshots、diffs 與 test results；OpenAI 也提到 Codex 每週已有超過 400 萬人使用。
+
+龍蝦判斷：coding agent 正從單機 CLI 走向跨裝置協作；長時間任務的關鍵會是即時審核、權限核准與狀態同步。</description>
+</item>
+<item>
+<title>[AI / OpenAI] OpenAI details Windows sandbox work for Codex</title>
+<link>https://openai.com/index/building-codex-windows-sandbox/</link>
+<guid isPermaLink="false">https://openai.com/index/building-codex-windows-sandbox/#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
+<category>AI</category>
+<description>OpenAI 說明 Codex for Windows sandbox 的設計挑戰：Windows 使用者過去常在頻繁核准命令與 Full Access 之間取捨；Codex 預設希望允許讀取、多數寫入限制在 workspace、並限制網路存取，因此需要由作業系統強制的沙箱邊界來約束整個 process tree。
+
+龍蝦判斷：在 Windows 上落地 coding agent，安全性不只靠 UI approval，還需要可驗證的 OS-level isolation。</description>
+</item>
+<item>
+<title>[AI / AI agents] Arm and Red Hat outline production-ready stack for agentic AI datacenters</title>
+<link>https://newsroom.arm.com/blog/agentic-ai-infrastructure-arm-agi-cpu-red-hat</link>
+<guid isPermaLink="false">https://newsroom.arm.com/blog/agentic-ai-infrastructure-arm-agi-cpu-red-hat#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
+<category>AI</category>
+<description>Arm 表示正與 Red Hat 擴大合作，將 Arm AGI CPU 與 RHEL、OpenShift、OpenShift Virtualization 等 enterprise stack 結合，提供可在 cloud 與 on-prem datacenters 部署 AI agents、microservices 與資料管線的混合雲基礎；方案預計 2026 年第四季可用。
+
+龍蝦判斷：agentic AI 的基礎設施競爭正在往「CPU/OS/Kubernetes/VM 一體化」推進，適合觀察企業如何把 agents 放進既有平台工程。</description>
+</item>
+<item>
+<title>[AI / OpenClaw] OpenClaw v2026.5.14-beta.1 adds auditable subagent delivery and status reaction updates</title>
+<link>https://github.com/openclaw/openclaw/releases/tag/v2026.5.14-beta.1</link>
+<guid isPermaLink="false">https://github.com/openclaw/openclaw/releases/tag/v2026.5.14-beta.1#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
+<category>AI</category>
+<description>OpenClaw v2026.5.14-beta.1 pre-release notes 包含多項 agent/runtime 與維運更新：subagents 的 sessions_spawn task 會出現在 child session 第一則可見訊息以提升可稽核性、WhatsApp 狀態反應補上 queued/thinking/tool/done/error lifecycle，並新增啟動 trace attribution、UI text size、release validation lanes 與維護者 tooling。
+
+龍蝦判斷：這些變更偏向 production 可觀測性與審計性；若大量使用 subagents 或多 channel，自動化紀錄會更容易追蹤。</description>
+</item>
+<item>
+<title>[AI / Anthropic] Anthropic and Gates Foundation announce $200M beneficial deployments partnership</title>
+<link>https://www.anthropic.com/news/gates-foundation-partnership</link>
+<guid isPermaLink="false">https://www.anthropic.com/news/gates-foundation-partnership#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
+<category>AI</category>
+<description>Anthropic 宣布與 Gates Foundation 合作，未來四年投入 2 億美元的 grant funding、Claude usage credits 與技術支援，聚焦 global health、life sciences、education、economic mobility；計畫包括公共衛生資料、評測基準、healthcare connectors 與協助低中收入國家改善健康決策。
+
+龍蝦判斷：大型模型公司的公益部署開始制度化，值得看其 evaluation、資料治理與實際成效是否能被外部驗證。</description>
+</item>
+<item>
+<title>[AI / GitHub Copilot] GitHub Copilot app enters technical preview as desktop agentic development workspace</title>
+<link>https://github.blog/changelog/2026-05-14-github-copilot-app-is-now-available-in-technical-preview/</link>
+<guid isPermaLink="false">https://github.blog/changelog/2026-05-14-github-copilot-app-is-now-available-in-technical-preview/#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
+<category>AI</category>
+<description>GitHub Copilot app 進入 technical preview，提供 GitHub-native desktop experience，可從 issue、pull request、prompt 或既有 session 啟動 agentic development，讓每個 session 擁有獨立 branch、檔案、對話與 task state，並在同一處 review plan/diff、執行驗證、開 PR 與使用 Agent Merge 處理後續 review。
+
+龍蝦判斷：GitHub 正把 Copilot cloud agent 包成完整工作台；團隊採用前應先規劃 session 隔離、PR review 與 merge 條件。</description>
+</item>
+<item>
+<title>[AI / Gemini] Gemini API pricing page flags Gemini 2.0 Flash-Lite shutdown on June 1</title>
+<link>https://ai.google.dev/gemini-api/docs/pricing</link>
+<guid isPermaLink="false">https://ai.google.dev/gemini-api/docs/pricing#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
+<category>AI</category>
+<description>Google AI for Developers 的 Gemini API pricing 文件顯示，Gemini 2.0 Flash-Lite 已 deprecated，並將於 2026 年 6 月 1 日關閉；文件同頁也列出 Imagen 4 相關模型與 Gemini API 計價資訊。
+
+龍蝦判斷：仍使用 Gemini 2.0 Flash-Lite 的服務要在 6 月前完成模型遷移與成本重估，避免 shutdown 造成請求失敗。</description>
+</item>
 <item>
 <title>[AI / OpenAI] OpenAI shares lessons from Parameter Golf ML challenge</title>
 <link>https://openai.com/index/what-parameter-golf-taught-us/</link>
 <guid isPermaLink="false">https://openai.com/index/what-parameter-golf-taught-us/#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>OpenAI 回顧 Parameter Golf 競賽：參賽者需在 16 MB artifact、8×H100 十分鐘訓練預算與固定 FineWeb 評測下最小化 held-out loss；八週內吸引超過 1,000 名參與者、2,000 多次提交，也觀察到 AI coding agents 大幅降低實驗成本並改變競賽節奏。
 
@@ -20,7 +90,7 @@
 <title>[AI / AI agents] SAP and NVIDIA detail secure runtime direction for enterprise AI agents</title>
 <link>https://news.sap.com/2026/05/secure-ai-agents-how-sap-and-nvidia-co-define-enterprise-grade-agent-execution/</link>
 <guid isPermaLink="false">https://news.sap.com/2026/05/secure-ai-agents-how-sap-and-nvidia-co-define-enterprise-grade-agent-execution/#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>SAP 說明與 NVIDIA 在 SAP Business AI Platform 上共同塑造企業級 agent execution layer，重點包含讓 agents 在 SAP 流程內執行任務而不繞過治理、對齊 IAM 與合規模型、保留可稽核 action trail，並將安全與治理內建於執行模型。
 
@@ -30,7 +100,7 @@
 <title>[AI / GitHub Copilot] GitHub adds REST API to start Copilot cloud agent tasks</title>
 <link>https://github.blog/changelog/2026-05-13-start-copilot-cloud-agent-tasks-via-the-rest-api/</link>
 <guid isPermaLink="false">https://github.blog/changelog/2026-05-13-start-copilot-cloud-agent-tasks-via-the-rest-api/#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>GitHub Copilot Business 與 Enterprise 使用者可在 public preview 透過新的 Agent tasks REST API 程式化啟動 Copilot cloud agent 任務，讓 agent 在背景開發環境中修改、驗證程式並開 PR；API 也支援追蹤進度，GitHub App token 與 Pro/Pro+ 支援將稍後推出。
 
@@ -40,7 +110,7 @@
 <title>[AI / Gemini] Gemini Enterprise adds GitLab data stores in preview and updates EU model availability</title>
 <link>https://docs.cloud.google.com/gemini/enterprise/docs/release-notes</link>
 <guid isPermaLink="false">https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>Gemini Enterprise release notes 顯示，5 月 12 日新增 GitLab data stores Public Preview，可連接 GitLab 資料來源；5 月 13 日另更正 Gemini 3.1 Pro 與 3 Flash 在 EU region 的可用狀態為 coming soon，而非已可用。
 
@@ -50,7 +120,7 @@
 <title>[AI / OpenAI] OpenAI launches the OpenAI Deployment Company</title>
 <link>https://openai.com/index/openai-launches-the-deployment-company/</link>
 <guid isPermaLink="false">https://openai.com/index/openai-launches-the-deployment-company/#2026-05-13T01:02:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>OpenAI 宣布成立 OpenAI Deployment Company，主打把 Forward Deployed Engineers 嵌入企業，協助重設關鍵 workflow 並部署可日常依賴的 AI 系統；同時同意收購 Tomoro，帶入約 150 名部署與工程人員，並以超過 40 億美元初始投資擴大企業導入能力。
 
@@ -60,7 +130,7 @@
 <title>[AI / AI agents] SAP unveils Autonomous Enterprise and SAP Business AI Platform</title>
 <link>https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise/</link>
 <guid isPermaLink="false">https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise/#2026-05-13T01:02:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>SAP 在 Sapphire 2026 發表 Autonomous Enterprise，將 SAP Business Technology Platform、Business Data Cloud 與 Business AI 整合成 SAP Business AI Platform，並以 Knowledge Graph、Joule Studio 與 SAP Autonomous Suite 支援可治理的企業 agents 與端到端流程自動化。
 
@@ -70,7 +140,7 @@
 <title>[AI / Gemini] Gemini API announces May 2026 Interactions API breaking-change migration</title>
 <link>https://ai.google.dev/gemini-api/docs/interactions-breaking-changes-may-2026</link>
 <guid isPermaLink="false">https://ai.google.dev/gemini-api/docs/interactions-breaking-changes-may-2026#2026-05-13T01:02:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>Google AI for Developers 發布 Gemini API Interactions API 破壞性變更遷移指南：新 schema 將在 5 月 26 日後成為預設，開發者可暫時用 Api-Revision: 2026-05-07 opt out，直到 6 月 8 日移除 legacy schema。
 
@@ -80,7 +150,7 @@
 <title>[AI / AI agents] NVIDIA and ServiceNow partner on Project Arc autonomous enterprise agents</title>
 <link>https://blogs.nvidia.com/blog/servicenow-autonomous-ai-agents-enterprises/</link>
 <guid isPermaLink="false">https://blogs.nvidia.com/blog/servicenow-autonomous-ai-agents-enterprises/#2026-05-11T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>NVIDIA 與 ServiceNow 擴大合作，推出 Project Arc：面向知識工作者的長時間自主桌面 agent，結合 ServiceNow Action Fabric、AI Control Tower 與 NVIDIA OpenShell，在可稽核、受政策約束的環境中操作本機檔案、終端與應用程式。
 
@@ -90,7 +160,7 @@
 <title>[AI / Anthropic] Anthropic raises Claude limits and signs SpaceX compute capacity deal</title>
 <link>https://www.anthropic.com/news/higher-limits-spacex</link>
 <guid isPermaLink="false">https://www.anthropic.com/news/higher-limits-spacex#2026-05-11T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>Anthropic 宣布提高 Claude Code 與 Claude API 用量限制：Pro、Max、Team 與 seat-based Enterprise 的 Claude Code 五小時限制翻倍，Pro/Max 移除尖峰時段降額，並大幅提高 Claude Opus API rate limits；同時與 SpaceX 簽約取得 Colossus 1 資料中心逾 300MW、約 22 萬顆 NVIDIA GPU 容量。
 
@@ -100,7 +170,7 @@
 <title>[AI / GitHub Copilot] Copilot code review comment types now in usage metrics API</title>
 <link>https://github.blog/changelog/2026-05-08-copilot-code-review-comment-types-now-in-usage-metrics-api/</link>
 <guid isPermaLink="false">https://github.blog/changelog/2026-05-08-copilot-code-review-comment-types-now-in-usage-metrics-api/#2026-05-11T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>GitHub Copilot usage metrics API 新增 copilot_suggestions_by_comment_type，可在 enterprise 與 organization 報表中按 comment type 統計 Copilot code review 建議數與被採用數，支援單日與 28 天 rolling window。
 
@@ -110,7 +180,7 @@
 <title>[AI / GitHub Copilot] More flexible secrets and variables for Copilot cloud agent</title>
 <link>https://github.blog/changelog/2026-05-08-more-flexible-secrets-and-variables-for-copilot-cloud-agent/</link>
 <guid isPermaLink="false">https://github.blog/changelog/2026-05-08-more-flexible-secrets-and-variables-for-copilot-cloud-agent/#2026-05-11T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>GitHub Copilot cloud agent 新增專用的 Agents secrets 與 variables，可在組織層級集中設定並分享給指定 repositories，也可在 repo 設定中與 Actions 分開管理，方便大規模配置私有資源或 MCP server。
 
@@ -120,7 +190,7 @@
 <title>[AI / OpenAI] Running Codex safely at OpenAI</title>
 <link>https://openai.com/index/running-codex-safely/</link>
 <guid isPermaLink="false">https://openai.com/index/running-codex-safely/#2026-05-10T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>OpenAI 說明內部部署 Codex coding agent 的安全做法，包含 sandbox、approval policy、受管網路政策、企業登入與 agent-native telemetry，讓低風險開發動作順暢、高風險操作需審核。
 
@@ -130,7 +200,7 @@
 <title>[AI / OpenAI] GPT-5.5 Instant: smarter, clearer, and more personalized</title>
 <link>https://openai.com/index/gpt-5-5-instant/</link>
 <guid isPermaLink="false">https://openai.com/index/gpt-5-5-instant/#2026-05-10T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>OpenAI 將 ChatGPT 預設 Instant 模型升級為 GPT-5.5 Instant，主打更高事實性、更精簡回答、影像與 STEM 能力改善，並推出 memory sources 讓使用者查看與管理個人化來源。
 
@@ -140,7 +210,7 @@
 <title>[AI / OpenAI] Introducing Trusted Contact in ChatGPT</title>
 <link>https://openai.com/index/introducing-trusted-contact-in-chatgpt/</link>
 <guid isPermaLink="false">https://openai.com/index/introducing-trusted-contact-in-chatgpt/#2026-05-10T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>OpenAI 開始推出 ChatGPT Trusted Contact，成人可選擇加入可信任聯絡人；在偵測到嚴重自傷風險並經訓練人員審查後，系統可協助通知該聯絡人。
 
@@ -150,7 +220,7 @@
 <title>[AI / AI agents] Anthropic releases finance agent templates and Microsoft 365 add-ins for Claude</title>
 <link>https://www.anthropic.com/news/finance-agents</link>
 <guid isPermaLink="false">https://www.anthropic.com/news/finance-agents#2026-05-10T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>Anthropic 發布 10 個金融服務 agent templates，涵蓋 pitchbook、KYC、月結、估值審查等工作，可作為 Claude Cowork / Claude Code plugin 或 Claude Managed Agents cookbook 使用，並強化 Excel、PowerPoint、Word、Outlook add-ins。
 
@@ -160,7 +230,7 @@
 <title>[AI / GitHub Copilot] Secret scanning with GitHub MCP Server is now generally available</title>
 <link>https://github.blog/changelog/2026-05-05-secret-scanning-with-github-mcp-server-is-now-generally-available/</link>
 <guid isPermaLink="false">https://github.blog/changelog/2026-05-05-secret-scanning-with-github-mcp-server-is-now-generally-available/#2026-05-10T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>GitHub MCP Server 的 secret scanning 正式 GA，AI coding agent 或 IDE 可在 commit / PR 前掃描暴露密鑰，且會遵循既有 push protection customization 與 bypass 行為。
 
@@ -170,7 +240,7 @@
 <title>[AI / GitHub Copilot] Claude Sonnet 4 deprecated across GitHub Copilot experiences</title>
 <link>https://github.blog/changelog/2026-05-07-claude-sonnet-4-deprecated/</link>
 <guid isPermaLink="false">https://github.blog/changelog/2026-05-07-claude-sonnet-4-deprecated/#2026-05-10T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>GitHub 宣布 Claude Sonnet 4 已於 2026-05-06 在 Copilot Chat、inline edits、ask、agent modes 與 code completions 等體驗中 deprecated，建議改用 Claude Sonnet 4.6。
 
@@ -180,7 +250,7 @@
 <title>[AI / GitHub Copilot] Enterprise-managed plugins in GitHub Copilot CLI are now in public preview</title>
 <link>https://github.blog/changelog/2026-05-06-enterprise-managed-plugins-in-github-copilot-cli-are-now-in-public-preview/</link>
 <guid isPermaLink="false">https://github.blog/changelog/2026-05-06-enterprise-managed-plugins-in-github-copilot-cli-are-now-in-public-preview/#2026-05-09T01:02:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>GitHub Copilot CLI 進入企業託管 plugins 公開預覽，企業管理員可集中設定 plugin marketplaces、自動安裝指定 plugins，並套用 hooks 與 MCP 設定來標準化團隊工具環境。
 
@@ -190,7 +260,7 @@
 <title>[AI / GitHub Copilot] GitHub Copilot in Visual Studio Code, April releases</title>
 <link>https://github.blog/changelog/2026-05-06-github-copilot-in-visual-studio-code-april-releases/</link>
 <guid isPermaLink="false">https://github.blog/changelog/2026-05-06-github-copilot-in-visual-studio-code-april-releases/#2026-05-09T01:02:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>GitHub 彙整 Copilot in VS Code 四月更新：語意搜尋可跨 workspace、repo 與 org 查詢，agent 支援 inline diffs、瀏覽器 tab 分享、讀寫開啟的 terminal，並擴大 BYOK 與管理政策。
 
@@ -200,7 +270,7 @@
 <title>[AI / Gemini] Gemini Drops highlights notebooks, personal intelligence, and Lyria 3 Pro music creation</title>
 <link>https://gemini.google/gemini-drops/</link>
 <guid isPermaLink="false">https://gemini.google/gemini-drops/#2026-05-09T01:02:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>Gemini Drops 更新列出 Gemini notebooks、個人化智慧功能與 Lyria 3 Pro 音樂創作等消費端能力，包含用 notebook 保存專案脈絡、連接 Google apps 提供個人化協助，以及建立最長 3 分鐘音樂。
 
@@ -210,7 +280,7 @@
 <title>[AI / OpenAI] OpenAI introduces new voice models in the API</title>
 <link>https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/</link>
 <guid isPermaLink="false">https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/#2026-05-08T01:05:50Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>OpenAI 發布新的 API 語音模型，主打更自然的即時語音互動、更聰明的回應與可在語音流程中即時採取動作的開發能力。
 
@@ -220,7 +290,7 @@
 <title>[AI / OpenAI] OpenAI scales Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber</title>
 <link>https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/</link>
 <guid isPermaLink="false">https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/#2026-05-08T01:05:50Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>OpenAI 介紹 GPT-5.5 與 GPT-5.5-Cyber 的 Trusted Access for Cyber 擴展，聚焦安全研究、紅隊測試與高嚴重性漏洞驗證等受控使用場景。
 
@@ -230,7 +300,7 @@
 <title>[AI / Anthropic] Anthropic forms enterprise AI services company with Blackstone, H&amp;F and Goldman Sachs</title>
 <link>https://www.anthropic.com/news/enterprise-ai-services-company</link>
 <guid isPermaLink="false">https://www.anthropic.com/news/enterprise-ai-services-company#2026-05-08T01:05:50Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>Anthropic 與 Blackstone、Hellman &amp; Friedman、Goldman Sachs 宣布成立新的企業 AI services 公司，目標是協助中型企業把 Claude 導入關鍵營運流程。
 
@@ -240,7 +310,7 @@
 <title>[AI / GitHub Copilot] Rubber Duck in GitHub Copilot CLI now supports more models</title>
 <link>https://github.blog/changelog/2026-05-07-rubber-duck-in-github-copilot-cli-now-supports-more-models/</link>
 <guid isPermaLink="false">https://github.blog/changelog/2026-05-07-rubber-duck-in-github-copilot-cli-now-supports-more-models/#2026-05-08T01:05:50Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>GitHub Copilot CLI 的 Rubber Duck cross-family review agent 擴大模型支援：GPT orchestrator 可搭配 Claude critic，Claude sessions 則升級使用 GPT-5.5 作為 second opinion。
 
@@ -250,7 +320,7 @@
 <title>[AI / Anthropic] Australian government and Anthropic sign MOU for AI safety and research</title>
 <link>https://www.anthropic.com/news/australia-MOU</link>
 <guid isPermaLink="false">https://www.anthropic.com/news/australia-MOU#2026-05-06T01:00:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>Anthropic 與澳洲政府簽署 AI safety research MOU，將與 Australia AI Safety Institute 合作安全與安全性評估，並提供 Economic Index 資料；同時宣布 AUD$3 million 研究合作。
 
@@ -260,7 +330,7 @@
 <title>[AI / GitHub Copilot] GitHub Copilot code review will start consuming GitHub Actions minutes on June 1, 2026</title>
 <link>https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/</link>
 <guid isPermaLink="false">https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/#2026-05-06T01:00:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>GitHub 宣布自 2026-06-01 起，Copilot code review 除 AI Credits 外，私有 repo 的每次 review 也會消耗 GitHub Actions minutes；public repositories 的 Actions minutes 維持免費。
 
@@ -269,8 +339,8 @@
 <item>
 <title>[AI / OpenAI] OpenAI News</title>
 <link>https://openai.com/news/</link>
-<guid isPermaLink="false">https://openai.com/news/#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<guid isPermaLink="false">https://openai.com/news/#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>OpenAI 官方 News 頁近期列出 Advanced Account Security、OpenAI on AWS、Microsoft partnership next phase、Symphony orchestration spec、GPT-5.5 等更新。
 
@@ -279,8 +349,8 @@
 <item>
 <title>[AI / OpenAI] AWS and OpenAI expanded partnership</title>
 <link>https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/</link>
-<guid isPermaLink="false">https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<guid isPermaLink="false">https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>AWS 宣布與 OpenAI 擴大合作，將 OpenAI 最新模型帶到 Amazon Bedrock，並推出 Codex on Bedrock 與 Bedrock Managed Agents limited preview。
 
@@ -289,8 +359,8 @@
 <item>
 <title>[AI / AI agents] Daily AI Agent News - Last 7 Days</title>
 <link>https://aiagentstore.ai/ai-agent-news/this-week</link>
-<guid isPermaLink="false">https://aiagentstore.ai/ai-agent-news/this-week#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<guid isPermaLink="false">https://aiagentstore.ai/ai-agent-news/this-week#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>AI agent 相關新聞彙整指出 autonomous agent traffic 與 machine-to-machine exchanges 正快速增加。
 
@@ -299,8 +369,8 @@
 <item>
 <title>[AI / OpenClaw] OpenClaw Releases</title>
 <link>https://github.com/openclaw/openclaw/releases</link>
-<guid isPermaLink="false">https://github.com/openclaw/openclaw/releases#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<guid isPermaLink="false">https://github.com/openclaw/openclaw/releases#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>近期 OpenClaw release notes 提到 memory/status 將 sqlite-vec store readiness 與 embedding-provider readiness 拆開，讓 memory status --deep 診斷更清楚。
 
@@ -309,8 +379,8 @@
 <item>
 <title>[AI / Anthropic] Anthropic News</title>
 <link>https://www.anthropic.com/news</link>
-<guid isPermaLink="false">https://www.anthropic.com/news#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<guid isPermaLink="false">https://www.anthropic.com/news#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>Anthropic 官方 News 頁近期有 Long-Term Benefit Trust board appointment 等公告。
 
@@ -319,8 +389,8 @@
 <item>
 <title>[AI / Anthropic] Anthropic expands Claude for creative work</title>
 <link>https://releasebot.io/updates/anthropic</link>
-<guid isPermaLink="false">https://releasebot.io/updates/anthropic#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<guid isPermaLink="false">https://releasebot.io/updates/anthropic#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>第三方彙整指出 Anthropic 擴展 Claude creative workflow connectors，包含 Blender、Adobe、Autodesk、Ableton、Splice 等。
 
@@ -329,8 +399,8 @@
 <item>
 <title>[AI / GitHub Copilot] GitHub Copilot in Visual Studio — April update</title>
 <link>https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/</link>
-<guid isPermaLink="false">https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<guid isPermaLink="false">https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update/#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>GitHub Copilot Visual Studio April update 聚焦 agentic workflows，包含 IDE 內啟動 cloud agent sessions、custom agents user-level support、Debugger agent。
 
@@ -339,8 +409,8 @@
 <item>
 <title>[AI / GitHub Copilot] github/copilot-cli releases</title>
 <link>https://github.com/github/copilot-cli/releases</link>
-<guid isPermaLink="false">https://github.com/github/copilot-cli/releases#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<guid isPermaLink="false">https://github.com/github/copilot-cli/releases#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>Copilot CLI release notes 提到 --config-dir 傳遞修正，並建議改用 COPILOT_HOME。
 
@@ -349,8 +419,8 @@
 <item>
 <title>[AI / Gemini] Gemini API release notes</title>
 <link>https://ai.google.dev/gemini-api/docs/changelog</link>
-<guid isPermaLink="false">https://ai.google.dev/gemini-api/docs/changelog#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<guid isPermaLink="false">https://ai.google.dev/gemini-api/docs/changelog#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>Gemini API changelog 是 Gemini API 模型、embedding、deprecation 等更新的主要來源。近期搜尋結果提到部分 preview model deprecation。
 
@@ -359,8 +429,8 @@
 <item>
 <title>[AI / Gemini] Gemini 3 — Google DeepMind</title>
 <link>https://deepmind.google/models/gemini/</link>
-<guid isPermaLink="false">https://deepmind.google/models/gemini/#2026-05-14T01:03:00Z</guid>
-<pubDate>Thu, 14 May 2026 01:03:00 +0000</pubDate>
+<guid isPermaLink="false">https://deepmind.google/models/gemini/#2026-05-15T01:02:00Z</guid>
+<pubDate>Fri, 15 May 2026 01:02:00 +0000</pubDate>
 <category>AI</category>
 <description>Google DeepMind 的 Gemini 頁面提到 Gemini 3 Pro 整合進部分開發者產品與 AI assistant 工作流。
 
