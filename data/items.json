@@ -1,6 +1,83 @@
 {
-  "updatedAt": "2026-05-15T01:02:00Z",
+  "updatedAt": "2026-05-16T01:03:00Z",
   "items": [
+    {
+      "topic": "openai",
+      "title": "OpenAI previews personal finance experience in ChatGPT",
+      "url": "https://openai.com/index/personal-finance-chatgpt/",
+      "published": "2026-05-15",
+      "source": "openai.com",
+      "importance": "high",
+      "summary": "OpenAI 發布 ChatGPT 個人理財體驗 preview，先開放美國 Pro 使用者在 web 與 iOS 透過 Plaid 連接金融帳戶，查看資產、支出、訂閱、待付款項等 dashboard，並用 GPT-5.5 搭配使用者財務脈絡回答預算、投資與目標規劃問題；OpenAI 強調這不是專業財務建議的替代品。",
+      "longxiaNote": "AI 助理開始進入高敏感個人資料場景；採用重點會是資料控制、記憶邊界、責任揭露與金融建議風險。",
+      "foundAt": "2026-05-16T01:03:00Z"
+    },
+    {
+      "topic": "ai-agents",
+      "title": "Boomi announces governed connectivity stack for agentic enterprise",
+      "url": "https://boomi.com/blog/boomi-innovations-may-2026/",
+      "published": "2026-05-14",
+      "source": "boomi.com",
+      "importance": "medium",
+      "summary": "Boomi 在 Boomi World 2026 發布一系列 agentic enterprise 平台更新，主軸是以 active data foundation 支援 agents 存取企業系統、取得可信上下文並受集中治理；其中 Boomi Connect 將 Claude、Gemini、ChatGPT Enterprise、Microsoft Copilot 等 AI 介面透過 managed MCP service 連到 1,000 多個企業工具，並提供驗證、計量與治理。",
+      "longxiaNote": "企業 agent 落地越來越像平台工程問題：連接器、MCP、權限、稽核與資料脈絡會決定 agent 是否能進 production。",
+      "foundAt": "2026-05-16T01:03:00Z"
+    },
+    {
+      "topic": "openclaw",
+      "title": "OpenClaw v2026.5.14-beta.2 adds command-turn helpers and startup/runtime refinements",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.14-beta.2",
+      "published": "2026-05-15",
+      "source": "github.com/openclaw",
+      "importance": "medium",
+      "summary": "OpenClaw v2026.5.14-beta.2 pre-release 包含多項 runtime 與維運更新：channel turn construction 新增 normalized command turn facts 與 command-turn helpers、agent bootstrap profile 可覆寫 contextInjection 與 bootstrap token caps、Canvas 相關模組改為 lazy-load 以降低 Gateway 啟動成本，並擴充 i18n report、maintainer tooling、hook context metadata 與 release validation lanes。",
+      "longxiaNote": "這版偏向可觀測性、啟動效能與 agent/channel 基礎能力；若在做 plugin、channel 或多 agent 維運，值得追 release notes。",
+      "foundAt": "2026-05-16T01:03:00Z"
+    },
+    {
+      "topic": "github-copilot",
+      "title": "GitHub adds team-level Copilot usage metrics via API",
+      "url": "https://github.blog/changelog/2026-05-14-team-level-copilot-usage-metrics-now-available-via-api/",
+      "published": "2026-05-14",
+      "source": "github.blog",
+      "importance": "medium",
+      "summary": "GitHub Copilot usage metrics API 新增 user-teams report，enterprise admins、org owners、billing managers 與具備權限的 custom role 可下載 NDJSON 報表，將 Copilot licensed users 對應到 teams，並與既有 per-user usage report join 以產生 team-level adoption、completion、chat、CLI、code review、cloud agent 等指標。",
+      "longxiaNote": "Copilot 導入進入管理層可量測階段；團隊層級指標有助 enablement，但要注意小團隊排除與多 team 重複計數。",
+      "foundAt": "2026-05-16T01:03:00Z"
+    },
+    {
+      "topic": "gemini",
+      "title": "Gemini Interactions API docs show 2026-05-20 revision header for new schema",
+      "url": "https://ai.google.dev/gemini-api/docs/interactions/api-key",
+      "published": "2026-05-12",
+      "source": "ai.google.dev",
+      "importance": "medium",
+      "summary": "Gemini Interactions API 文件更新範例，顯示可在 requests 加上 Api-Revision: 2026-05-20 以 opt in 新 schema；相關 May 2026 migration guide 說明 5 月 26 日後新 schema 會成為預設，舊 schema 只能短期 opt out。",
+      "longxiaNote": "使用 Gemini Interactions API 的服務要把 revision header 與 schema 測試納入 release checklist，避免預設切換造成 production 解析失敗。",
+      "foundAt": "2026-05-16T01:03:00Z"
+    },
+    {
+      "topic": "deep-learning-trading",
+      "title": "arXiv study finds econometric baselines still strong for yield curve forecasting",
+      "url": "https://arxiv.org/abs/2605.09842",
+      "published": "2026-05-11",
+      "source": "arxiv.org",
+      "importance": "medium",
+      "summary": "arXiv 論文比較 47 年美國 Treasury yield curve 日資料上的 econometrics、classical ML 與 deep learning forecasting 方法，涵蓋 ARIMA、naive benchmarks、ensemble methods、RNN 與多種 forecasting transformers；結果顯示 ARIMA 與 naive econometric models 整體仍優於多數 ML/DL 方法，TimeGPT、LGBM 與 RNN 是 ML 類別中相對較佳者。",
+      "longxiaNote": "金融時間序列不該預設深度模型勝出；交易/風控模型評估需要保留強 econometric baseline 與嚴格樣本外驗證。",
+      "foundAt": "2026-05-16T01:03:00Z"
+    },
+    {
+      "topic": "linux",
+      "title": "The Hacker News summarizes Fragnesia Linux kernel LPE and distro advisories",
+      "url": "https://thehackernews.com/2026/05/new-fragnesia-linux-kernel-lpe-grants.html",
+      "published": "2026-05-15",
+      "source": "thehackernews.com",
+      "importance": "high",
+      "summary": "The Hacker News 彙整 Fragnesia（CVE-2026-46300）Linux kernel 本地提權漏洞細節：漏洞位於 XFRM ESP-in-TCP subsystem，可讓本地攻擊者透過 page cache corruption 取得 root；文中列出 AlmaLinux、Amazon Linux、CloudLinux、Debian、Gentoo、Red Hat、SUSE、Ubuntu 等 advisories，並提到已有 PoC 與 patch/mitigation 建議。",
+      "longxiaNote": "這與 Dirty Frag 同屬高風險本地提權面；多租戶與可執行不受信任 workload 的 Linux 主機應追 distro patch 並評估暫時停用 ESP/XFRM/IPsec。",
+      "foundAt": "2026-05-16T01:03:00Z"
+    },
     {
       "topic": "openai",
       "title": "OpenAI brings Codex into the ChatGPT mobile app",
