@@ -5,12 +5,12 @@
 <link>https://evan891119ai.github.io/longxia-info-board/categories/systems-linux.html</link>
 <description>Linux kernel、發行版、安全更新、系統工具與基礎設施。</description>
 <language>zh-Hant</language>
-<lastBuildDate>Sat, 16 May 2026 01:03:00 +0000</lastBuildDate>
+<lastBuildDate>Mon, 18 May 2026 01:03:15 +0000</lastBuildDate>
 <item>
 <title>[系統與 Linux / Linux 相關資訊] The Hacker News summarizes Fragnesia Linux kernel LPE and distro advisories</title>
 <link>https://thehackernews.com/2026/05/new-fragnesia-linux-kernel-lpe-grants.html</link>
 <guid isPermaLink="false">https://thehackernews.com/2026/05/new-fragnesia-linux-kernel-lpe-grants.html#2026-05-16T01:03:00Z</guid>
-<pubDate>Sat, 16 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Mon, 18 May 2026 01:03:15 +0000</pubDate>
 <category>系統與 Linux</category>
 <description>The Hacker News 彙整 Fragnesia（CVE-2026-46300）Linux kernel 本地提權漏洞細節：漏洞位於 XFRM ESP-in-TCP subsystem，可讓本地攻擊者透過 page cache corruption 取得 root；文中列出 AlmaLinux、Amazon Linux、CloudLinux、Debian、Gentoo、Red Hat、SUSE、Ubuntu 等 advisories，並提到已有 PoC 與 patch/mitigation 建議。
 
@@ -20,7 +20,7 @@
 <title>[系統與 Linux / Linux 相關資訊] AlmaLinux publishes testing kernels for Fragnesia CVE-2026-46300</title>
 <link>https://almalinux.org/blog/2026-05-13-fragnesia-cve-2026-46300/</link>
 <guid isPermaLink="false">https://almalinux.org/blog/2026-05-13-fragnesia-cve-2026-46300/#2026-05-15T01:02:00Z</guid>
-<pubDate>Sat, 16 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Mon, 18 May 2026 01:03:15 +0000</pubDate>
 <category>系統與 Linux</category>
 <description>AlmaLinux 更新 Fragnesia（CVE-2026-46300）公告，表示 almalinux-testing 已提供重新整理後的 patched kernels，涵蓋 AL8、AL9、AL10；此本地 root 漏洞位於與 Dirty Frag 類似的 IPsec ESP / rxrpc 相關攻擊面，公開 PoC 已存在，官方建議已安裝早期 test build 的使用者重新更新並 reboot。
 
@@ -30,7 +30,7 @@
 <title>[系統與 Linux / Linux 相關資訊] Ubuntu publishes USN-8266-1 Linux kernel security updates</title>
 <link>https://ubuntu.com/security/notices/USN-8266-1</link>
 <guid isPermaLink="false">https://ubuntu.com/security/notices/USN-8266-1#2026-05-14T01:03:00Z</guid>
-<pubDate>Sat, 16 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Mon, 18 May 2026 01:03:15 +0000</pubDate>
 <category>系統與 Linux</category>
 <description>Ubuntu 發布 USN-8266-1，修補多個 Linux kernel 安全問題，影響 generic kernel 以及 AWS、Azure、GCP、Oracle、KVM、FIPS、HWE 等多種 kernel package；公告指出 AppArmor LSM 等漏洞可能讓本地低權限攻擊者造成拒絕服務或進一步影響系統。
 
@@ -40,7 +40,7 @@
 <title>[系統與 Linux / Linux 相關資訊] Microsoft reports active Dirty Frag Linux exploitation risk</title>
 <link>https://www.microsoft.com/en-us/security/blog/2026/05/08/active-attack-dirty-frag-linux-vulnerability-expands-post-compromise-risk/</link>
 <guid isPermaLink="false">https://www.microsoft.com/en-us/security/blog/2026/05/08/active-attack-dirty-frag-linux-vulnerability-expands-post-compromise-risk/#2026-05-13T01:02:00Z</guid>
-<pubDate>Sat, 16 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Mon, 18 May 2026 01:03:15 +0000</pubDate>
 <category>系統與 Linux</category>
 <description>Microsoft Security 說明 Dirty Frag Linux 本地提權漏洞已出現公開 PoC 與主動攻擊風險，影響 esp4、esp6 與 rxrpc 等 kernel networking / memory-fragment 路徑，可能在 SSH、web shell、container 或低權限帳號初始入侵後被用來取得 root。
 
@@ -50,7 +50,7 @@
 <title>[系統與 Linux / Linux 相關資訊] AlmaLinux ships patched kernels for Dirty Frag Linux vulnerabilities</title>
 <link>https://almalinux.org/blog/2026-05-07-dirty-frag/</link>
 <guid isPermaLink="false">https://almalinux.org/blog/2026-05-07-dirty-frag/#2026-05-11T01:03:00Z</guid>
-<pubDate>Sat, 16 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Mon, 18 May 2026 01:03:15 +0000</pubDate>
 <category>系統與 Linux</category>
 <description>AlmaLinux 說明 Dirty Frag 影響 Linux kernel IPsec ESP 與 rxrpc fast paths，涉及 CVE-2026-43284 與 CVE-2026-43500，公開 exploit 已出現；官方已將修補 kernel 推到 production repositories。
 
@@ -60,7 +60,7 @@
 <title>[系統與 Linux / Linux 相關資訊] SUSE publishes important Linux kernel live patch update SUSE-SU-2026:1776-1</title>
 <link>https://linuxsecurity.com/advisories/suse/suse-2026-1776-1-kernel</link>
 <guid isPermaLink="false">https://linuxsecurity.com/advisories/suse/suse-2026-1776-1-kernel#2026-05-10T01:03:00Z</guid>
-<pubDate>Sat, 16 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Mon, 18 May 2026 01:03:15 +0000</pubDate>
 <category>系統與 Linux</category>
 <description>LinuxSecurity 摘要 SUSE-SU-2026:1776-1：SUSE Linux Enterprise 15 SP6 kernel live patch 11 修補多個核心安全問題，包含 CVE-2026-31431 與多個 2025 / 2026 CVE，評級為 important。
 
@@ -70,7 +70,7 @@
 <title>[系統與 Linux / Linux 相關資訊] Linux kernel mainline 7.1-rc2 and stable 7.0.3 listed on kernel.org</title>
 <link>https://www.kernel.org/</link>
 <guid isPermaLink="false">https://www.kernel.org/#2026-05-06T01:00:00Z</guid>
-<pubDate>Sat, 16 May 2026 01:03:00 +0000</pubDate>
+<pubDate>Mon, 18 May 2026 01:03:15 +0000</pubDate>
 <category>系統與 Linux</category>
 <description>kernel.org 目前列出 mainline 7.1-rc2（2026-05-03）與 stable 7.0.3（2026-04-30），並提供 tarball、patch、diff、browse 與 changelog 入口。
 

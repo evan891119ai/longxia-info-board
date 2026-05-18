@@ -1,6 +1,116 @@
 {
-  "updatedAt": "2026-05-16T01:03:00Z",
+  "updatedAt": "2026-05-18T01:03:15Z",
   "items": [
+    {
+      "topic": "openai",
+      "title": "OpenAI launches Deployment Company for enterprise AI implementation",
+      "url": "https://openai.com/index/openai-launches-the-deployment-company/",
+      "published": "2026-05-11",
+      "source": "openai.com",
+      "importance": "high",
+      "summary": "OpenAI 宣布成立 OpenAI Deployment Company，主軸是把 forward deployed engineers 嵌入企業，協助重設流程、部署可日常使用的 AI 系統；同時 OpenAI 將收購 applied AI consulting and engineering firm Tomoro，並稱新公司會以超過 40 億美元初始投資擴張。",
+      "longxiaNote": "大型 AI 公司正在把「模型供應」延伸成「落地顧問與工程交付」；企業採用會更重視流程重設、權限治理與可靠運維。",
+      "foundAt": "2026-05-18T01:03:15Z"
+    },
+    {
+      "topic": "openai",
+      "title": "OpenAI Codex changelog adds mobile remote connections and hooks GA",
+      "url": "https://developers.openai.com/codex/changelog",
+      "published": "2026-05-14",
+      "source": "developers.openai.com",
+      "importance": "medium",
+      "summary": "OpenAI Codex changelog 顯示，Codex 現可從 ChatGPT mobile app 連到執行 Codex app 的 Mac，讓手機端使用同一台主機上的專案、檔案、credentials、plugins、skills 與設定；同次更新也包含 Hooks general availability、Codex access tokens 與 enterprise admin setup 文件。",
+      "longxiaNote": "Codex 正往跨裝置與自動化場景擴張；remote host 的安全邊界、token 管理與 hooks 審計會變成採用重點。",
+      "foundAt": "2026-05-18T01:03:15Z"
+    },
+    {
+      "topic": "ai-agents",
+      "title": "Notion introduces Developer Platform for agents, workers, and external data",
+      "url": "https://www.notion.com/blog/introducing-developer-platform",
+      "published": "2026-05-13",
+      "source": "notion.com",
+      "importance": "high",
+      "summary": "Notion 發布 Developer Platform，包含可部署自訂程式碼的 Workers、把資料同步進 Notion 的能力、External Agents 與 External Agent API，以及 ntn CLI；官方強調 auth、permissions 與 sandbox 從第一版就內建，讓團隊能把自建或第三方 agent 帶進 workspace。",
+      "longxiaNote": "Notion 正把 workspace 變成 agent orchestration layer；真正差異會在治理模型、外部資料同步品質與 agent action 可稽核性。",
+      "foundAt": "2026-05-18T01:03:15Z"
+    },
+    {
+      "topic": "openclaw",
+      "title": "OpenClaw v2026.5.16-beta.5 focuses on settings, skills, plugins, and proxy hardening",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.5.16-beta.5",
+      "published": "2026-05-17",
+      "source": "github.com/openclaw",
+      "importance": "medium",
+      "summary": "OpenClaw v2026.5.16-beta.5 pre-release 更新 Mac app Settings 版面與多個技能/工具提示，新增 meme-maker、node inspector、diagram 與 spike workflow skills，並加入 defineToolPlugin、openclaw plugins build/validate/init，以及 HTTPS managed forward-proxy endpoint 與 proxy CA trust 支援。",
+      "longxiaNote": "這版偏向 developer experience 與平台可維護性；若在做 plugin 或代理網路部署，值得追 plugin manifest 與 proxy TLS 變更。",
+      "foundAt": "2026-05-18T01:03:15Z"
+    },
+    {
+      "topic": "anthropic",
+      "title": "Anthropic forms $200 million partnership with the Gates Foundation",
+      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "published": "2026-05-14",
+      "source": "anthropic.com",
+      "importance": "high",
+      "summary": "Anthropic 宣布與 Gates Foundation 合作，承諾未來四年投入 2 億美元的 grant funding、Claude usage credits 與 technical support，支援全球健康、生命科學、教育與經濟流動性相關專案；合作也包含 healthcare connectors、benchmarks 與 evaluation frameworks。",
+      "longxiaNote": "這是 frontier model 公司把公益部署產品化的一步；要觀察 evaluation benchmark、資料治理與低中收入國家場景的實際落地成效。",
+      "foundAt": "2026-05-18T01:03:15Z"
+    },
+    {
+      "topic": "github-copilot",
+      "title": "GitHub Copilot app enters technical preview",
+      "url": "https://github.blog/changelog/2026-05-14-github-copilot-app-is-now-available-in-technical-preview/",
+      "published": "2026-05-14",
+      "source": "github.blog",
+      "importance": "high",
+      "summary": "GitHub Copilot app 進入 technical preview，提供 GitHub-native desktop experience，讓使用者從 issue、pull request、prompt 或既有 session 啟動 agentic development，並在隔離的 session 中追蹤分支、檔案、對話與任務狀態，最後透過 PR review 完成落地。",
+      "longxiaNote": "Copilot 正把 coding agent 從 IDE/chat 延伸為完整工作台；核心價值會在 session isolation、review loop 與 GitHub context 整合。",
+      "foundAt": "2026-05-18T01:03:15Z"
+    },
+    {
+      "topic": "github-copilot",
+      "title": "GitHub adds REST API to start Copilot cloud agent tasks",
+      "url": "https://github.blog/changelog/2026-05-13-start-copilot-cloud-agent-tasks-via-the-rest-api/",
+      "published": "2026-05-13",
+      "source": "github.blog",
+      "importance": "high",
+      "summary": "GitHub 對 Copilot Business 與 Enterprise 使用者公開預覽 Agent tasks REST API，可程式化啟動 Copilot cloud agent 任務，讓 agent 在背景開發環境中修改與驗證程式碼並開 PR；API 也能追蹤任務進度，支援 PAT 與 OAuth token。",
+      "longxiaNote": "Coding agent 開始變成可編排的 CI/平台能力；企業應先設計任務權限、repository allowlist、審查門檻與大量 fan-out 的成本控制。",
+      "foundAt": "2026-05-18T01:03:15Z"
+    },
+    {
+      "topic": "github-copilot",
+      "title": "Copilot for JetBrains adds CLI agent and unified sessions view",
+      "url": "https://github.blog/changelog/2026-05-13-introducing-copilot-cli-agent-and-unified-sessions-view-in-github-copilot-for-jetbrains-ides/",
+      "published": "2026-05-13",
+      "source": "github.blog",
+      "importance": "medium",
+      "summary": "GitHub Copilot for JetBrains IDEs 新增 Copilot CLI agent public preview 與 unified sessions view，可從 IDE 把任務委派給本機 Copilot CLI agent，並選擇 worktree isolation 或 workspace isolation；session view 會顯示執行中與排隊工作的狀態。",
+      "longxiaNote": "IDE 內 agent 正朝長任務與隔離工作區靠攏；團隊需要明確規範何時用 worktree、何時允許直接改 workspace。",
+      "foundAt": "2026-05-18T01:03:15Z"
+    },
+    {
+      "topic": "gemini",
+      "title": "Gemini Interactions API migration guide documents May 2026 breaking schema change",
+      "url": "https://ai.google.dev/gemini-api/docs/interactions-breaking-changes-may-2026",
+      "published": "2026-05-12",
+      "source": "ai.google.dev",
+      "importance": "high",
+      "summary": "Gemini Interactions API May 2026 breaking changes migration guide 說明，開發者可用 Api-Revision: 2026-05-20 header 提前 opt in 新 schema，而 5 月 26 日後新 schema 會成為預設；相關文件也提示需要更新 request/response parsing 與測試。",
+      "longxiaNote": "這類 API schema 切換很容易造成 production 解析失敗；用 Gemini Interactions API 的服務應把 revision header、contract tests 與回滾策略補齊。",
+      "foundAt": "2026-05-18T01:03:15Z"
+    },
+    {
+      "topic": "gemini",
+      "title": "Gemini pricing docs warn Gemini 2.0 Flash-Lite shutdown on June 1, 2026",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "published": "2026-05-14",
+      "source": "ai.google.dev",
+      "importance": "medium",
+      "summary": "Gemini Developer API pricing 文件更新警告，Gemini 2.0 Flash-Lite 已 deprecated，並將於 2026-06-01 shutdown；依賴該模型的應用需要遷移到較新的模型，避免服務中斷。",
+      "longxiaNote": "模型下線時間很近；任何 hard-coded model id、價格假設與回歸測試都應立刻檢查。",
+      "foundAt": "2026-05-18T01:03:15Z"
+    },
     {
       "topic": "openai",
       "title": "OpenAI previews personal finance experience in ChatGPT",
